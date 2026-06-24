@@ -212,7 +212,40 @@ h3 {
   line-height: 1.5rem;
   font-family: var(--fonte-titulo);
 }
-
+.cards .cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.cards .cabecalho span{
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--cor-texto-secundario);
+  border-radius: 0.125rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: var(--cor-fundo-icone-email);
+  border-color: var(--cor-borda-icone-email);
+}
+.cards .cabecalho span svg{
+  color: var(--cor-texto-primario);
+}
+.cards .cabecalho a{
+    color: var(--cor-texto-rodape-secundario);
+}
+.cards .cabecalho a svg{
+    width: 1rem;
+    height: 1rem;
+}
+.cards aside{
+    text-align: right;
+    margin-top: 4rem;
+}
+.cards aside a{
+    color: var(--cor-destaque-principal);
+}
 .tags {
   list-style: none;
   padding: 0;
@@ -673,41 +706,11 @@ footer p {
   margin-bottom: 1rem;
 }
 
+/* ---- FERRAMENTAS ---- */
+
+
 /* ---- HOBBIES ---- */
-#hobbies .cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-}
-#hobbies .cabecalho span{
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 1px solid var(--cor-texto-secundario);
-  border-radius: 0.125rem;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  background-color: var(--cor-fundo-icone-email);
-  border-color: var(--cor-borda-icone-email);
-}
-#hobbies .cabecalho span svg{
-  color: var(--cor-texto-primario);
-}
-#hobbies .cabecalho a{
-    color: var(--cor-texto-rodape-secundario);
-}
-#hobbies .cabecalho a svg{
-    width: 1rem;
-    height: 1rem;
-}
-#hobbies aside{
-    text-align: right;
-    margin-top: 4rem;
-}
-#hobbies aside a{
-    color: var(--cor-destaque-principal);
-}
+
 #hobbies .cards li:nth-child(2) span{
     background-color: var(--cor-fundo-icone-agenda);
     border-color: var(--cor-borda-icone-agenda);
