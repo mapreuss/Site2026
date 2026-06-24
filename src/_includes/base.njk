@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <meta name="description" content="landing page de Marta Preuss, aka Martinha, palestrante, Product Ops, com experiência em Produtos Digitais, pesquisa com UX e resolução de problemas.">
+    <meta name="robots" content="follow">
+    <meta name="author" content="Marta Preuss">
+    <meta name="keywords" content="product ops, portfolio, produto digital, product manager, user experience">
+
+    <meta property="og:type" content="page">
+    <meta property="og:url" content="http://martinha.online">
+    <meta property="og:title" content="marta preuss | product ops">
+    <meta property="og:image" content="https://martinha.online/img/site-screenshot.png">
+    <meta property="og:description" content="Martinha: palestrante, Product Ops, com experiência em Produtos Digitais e solução de problemas.">
+
+    <meta property="article:author" content="Marta Preuss">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="marta preuss | product ops">
+    <meta name="twitter:description" content="Martinha: palestrante, Product Ops, com experiência em Produtos Digitais e solução de problemas.">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TRTTJHG4');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N0G563ZNL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5N0G563ZNL');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRTTJHG4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main>
+      <header>
+        <h1><a href="/">Marta Preuss</a></h1>
+        <nav>
+          {% include 'partials/navigation.njk' %}
+        </nav>  
+      </header>
+
+      {{ content | safe }}
+
+      {% include 'partials/footer.njk' %}
+
+    </main>
+  </body>
+</html>
