@@ -3,11 +3,8 @@ title: Assistente de triagem de tickets com GPT
 funcao: Product Operations Analyst  
 descricao: Desenvolvi do zero um assistente GPT personalizado para triagem automatizada de tickets.
 impacto: Triagem 40% mais rápida
-etiqueta1: GPT-4 
-etiqueta2: GitHub API
-etiqueta3: Jira API
 ano: 2025  
-ferramentas: GPT-4 · GitHub API · Jira API · Integração Customizada
+tags: ["GPT-4","GitHub API","Jira API","Integração Customizada"]
 ---
 ## 🧠 Assistente de triagem de tickets com GPT
     

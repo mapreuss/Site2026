@@ -6,14 +6,54 @@ layout: base.njk
     <article>
         <p class="chapeu"><small>Trabalhos</small></p>
         <h2>Portfolio</h2>
-        <p>Projetos e experiências que definem minha jornada. 
-        <a class="btn-opposite" href="">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download-icon lucide-download"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
-            Baixar currículo</a></p>
+        <p>Projetos e experiências que definem minha jornada. </p>
     </article>
 
-    <article class="internal">{{ content | safe }}</article>
+    <section class="col-2">
+        <article class="internal">
+            
+            {{ content | safe }}
+        
+            <ul class="tags">
+        {% for tag in tags %}
+            <li>{{ tag }}</li>
+        {% endfor %}
+        </ul>
+        </article>
 
-    {% include 'partials/portfolio-itens.njk' %}
+        <aside>
+            <article class="widget">
+                <p class="chapeu"><small>Outros projetos</small></p>
+                <ul>
+                    {% for item in collections.portfolio | sortBy("fileSlug") | reverse %}
+                    <li>
+                        <a href="{{ item.url }}">{{ item.data.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </article>
+            <article class="widget">
+                <p class="chapeu"><small>Tags</small></p>
+                <ul class="tags">
+                {% set portfolioTags = collections.portfolio | tagsComContagem %}
+                
+                {% for tag in portfolioTags %}
+                    <li>
+                    {{ tag.nome }} <span class="tag-count">({{ tag.quantidade }})</span>
+                    </li>
+                {% endfor %}
+            </ul>
+            </article>
+            <p><a class="btn-opposite" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-download-icon lucide-download">
+                        <path d="M12 15V3" />
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <path d="m7 10 5 5 5-5" />
+                    </svg>
+                    Baixar currículo</a></p>
+        </aside>
+    </section>
 
 </section>

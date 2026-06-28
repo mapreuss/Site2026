@@ -3,11 +3,8 @@ title: Processo de Registro e Triagem de Ideias
 funcao: Product Operations Analyst  
 descricao: Desenvolvimento do fluxo completo de intake e triagem de ideias, transformando feedback bruto em propostas acionáveis.
 impacto: 
-etiqueta1: Vibe coding
-etiqueta2: Jira
-etiqueta3: Slack
 ano: 2025  
-ferramentas: Jira Service Management · Slack · Google Forms · Google Sheets · Automação com Python
+tags: ["Jira Service Management","Slack","Google Forms","Google Sheets","Vibe coding"]
 ---
 
 

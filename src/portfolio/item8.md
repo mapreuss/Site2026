@@ -2,12 +2,9 @@
 title: Migração Tática de Ferramentas e Consolidação de Conhecimento
 funcao: Product Operations Analyst  
 descricao: Orquestração da migração estrutural de fluxos de produto, centralizando a gestão no Jira e implementando IA para pesquisa documental.
-impacto: Centralização da documentação e rotinas de produto, reduzindo a fragmentação de ferramentas legadas.
-etiqueta1: Migração de Sistemas
-etiqueta2: Gestão do Conhecimento
-etiqueta3: Inteligência Artificial
+impacto: 
 ano: 2026
-ferramentas: Notion · Jira · Azure DevOps · TechDocs · Google Docs · Gemini · Figma
+tags: ["Notion","Jira","Azure DevOps","TechDocs","Google Docs","Gemini","Figma"]
 ---
 ## 🔄 Migração Tática de Ferramentas e Consolidação de Conhecimento
 

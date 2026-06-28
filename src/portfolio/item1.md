@@ -3,11 +3,8 @@ title: Substituindo uma Ferramenta Paga por um Workflow de IA Interno
 funcao: Product Operations Analyst  
 descricao: Queríamos eliminar uma ferramenta paga usada para gerenciar biografias geradas por IA.
 impacto: U$D 40k/ano
-etiqueta1: Google Sheets
-etiqueta2: Apps Scripts
-etiqueta3: Softr.io
+tags: ["Google Sheets","Apps Scripts","Softr.io", "IA"]
 ano: 2024  
-ferramentas: Google Sheets · Apps Script · Softr.io · Modelo de IA Interno
 ---
 ## 🧠 Substituindo uma Ferramenta Paga por um Workflow de IA Interno
 

@@ -2,12 +2,9 @@
 title: Padronização e Nova Estrutura de Trabalho no Jira
 funcao: Product Operations Analyst  
 descricao: Criação de uma "espinha dorsal" padronizada no Jira para unificar o fluxo de Produto e Engenharia.
-impacto: Alinhamento entre equipes, automação de processos e criação de métricas confiáveis de desenvolvimento.
-etiqueta1: Product Ops
-etiqueta2: Jira Software
-etiqueta3: Processos Ágeis
+impacto: 
 ano: 2026
-ferramentas: Jira Software · Notion · Automação de Fluxos · Gestão de Upstream/Downstream
+tags: ["Jira Software","Notion","Automação de Fluxos","Gestão de Upstream/Downstream"]
 ---
 ## ⚙️ Padronização e Nova Estrutura de Trabalho no Jira
 

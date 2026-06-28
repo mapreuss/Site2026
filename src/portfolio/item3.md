@@ -3,11 +3,8 @@ title: Automação de Anúncios de Lançamentos (Go-To-Market)
 funcao: Product Operations Analyst  
 descricao: Gerador automático de conteúdos de GTM, que é ativado quando um ticket no Jira muda para o status "Done".
 impacto: 80% criação mais rápida
-etiqueta1: GPT-4 
-etiqueta2: GitHub API
-etiqueta3: Jira API
 ano: 2025  
-ferramentas: Jira · Make.com · GPT-4 · Google Docs · Slack
+tags: ["Jira","Make.com","GPT-4","Google Docs","Slack"]
 ---
 ## 📣 Automação de Anúncios de Lançamentos (Go-To-Market)
 

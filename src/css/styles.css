@@ -82,6 +82,37 @@ section {
   margin: 0 auto;
 }
 
+section.col-2 {
+  padding: 0;
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 5rem;
+}
+section.col-2 article{
+  grid-column:span 2 / span 2
+}
+.widget{
+  padding: 2rem;
+  background-color: var(--cor-fundo-cartao);
+  border-radius: 0.5rem;
+  border: 1px solid var(--cor-borda-padrao);
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+.widget ul{
+  padding: 0.5rem 0.75rem;
+}
+.widget li{
+  margin: 0 0 1rem 0;
+}
+.widget a{
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: var(--cor-texto-secundario5);
+}
 p {
   margin: 0;
   padding: 0;
@@ -691,7 +722,7 @@ footer p {
   border-radius: 0.5rem;
   border: 1px solid var(--cor-borda-padrao);
   box-sizing: border-box;
-  margin: 2rem 0;
+  margin: 0;
 }
 
 #portfolio-page h3 {

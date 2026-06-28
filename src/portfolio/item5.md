@@ -3,11 +3,8 @@ title: Quorum Ideas Digest - De Pedidos Brutos a Insights Semanais
 funcao: Product Operations Analyst  
 descricao: Construi e mantive um sistema automatizado de digest que transforma o backlog do Jira em insights estruturados.
 impacto: 
-etiqueta1: Vibe coding
-etiqueta2: Resumo com IA
-etiqueta3: Make.com
 ano: 2025  
-ferramentas: Jira API · Python · Slack · OpenAI · Make.com · GitHub Actions
+tags: ["Jira API","Python","Slack","OpenAI","Make.com","GitHub Actions"]
 ---
 
 ## 💡 Quorum Ideas Digest: De Pedidos Brutos a Insights Semanais
@@ -24,7 +21,7 @@ Ideias de melhoria e sugestões de funcionalidades estavam se acumulando no boar
 ### 💡 Minha Solução
 Construi e mantive um **sistema automatizado de digest** que transforma o backlog do Jira em insights estruturados.
 
-✅ Desenvolvi scripts em Python (com auxílio do Copilot) para buscar tarefas com status “Aguardando revisão” no projeto QE  
+✅ Desenvolvi scripts em Python (com auxílio do Copilot) para buscar tarefas com status “Aguardando revisão” no projeto
 ✅ Agrupei os itens por área de produto e categoria de deadline (atrasado, para a próxima semana, outros)  
 ✅ Integrei o GPT para gerar resumos com tendências com base nas descrições dos tickets  
 ✅ Testei vários formatos de mensagem no Slack e adotei o que gerou mais engajamento  

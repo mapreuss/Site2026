@@ -2,12 +2,9 @@
 title: Gestão e Automação das Reuniões de Stakeholders
 funcao: Product Operations Analyst  
 descricao: Padronização do processo das reuniões de stakeholders e automatização
-impacto: 
-etiqueta1: Vibe coding
-etiqueta2: Resumo com IA
-etiqueta3: APIs Rest
+impacto: Menos trabalho manual
 ano: 2025  
-ferramentas: Google Calendar · Zoom · Confluence · Resumo com IA · Script em Python
+tags: ["Google Calendar","Zoom","Confluence","Resumo com IA","Vibe coding"]
 ---
 
 ## 📆 Gestão e Automação das Reuniões de Stakeholders

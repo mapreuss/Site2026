@@ -2,12 +2,9 @@
 title: Tempo de Ciclo de Desenvolvimento das Big Bets
 funcao: Product Operations Analyst  
 descricao: Diagnóstico e padronização do tempo de ciclo de desenvolvimento para grandes iniciativas estratégicas.
-impacto: Visibilidade do fluxo de valor e proposta de framework unificado de produto
-etiqueta1: Product Ops
-etiqueta2: Análise de Dados
-etiqueta3: Jobs to be Done
+impacto: 
 ano: 2025
-ferramentas: Notion · Google Sheets · Tally · Metodologias Ágeis · LLMs (IA) · Double Diamond
+tags: ["Notion","Google Sheets","Tally","Metodologias Ágeis","LLMs (IA)","Double Diamond"]
 ---
 ## ⏱️ Tempo de Ciclo de Desenvolvimento das Big Bets
 
