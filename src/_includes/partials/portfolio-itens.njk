@@ -1,5 +1,5 @@
 <ul class="cards">
-{% for item in collections.portfolio | sortBy("fileSlug") | reverse %}
+{% for item in collections.portfolio | reverse %}
   {% if page.url != '/' or forloop.index <= 3 %}
   <li>
     <article>
