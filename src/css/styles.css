@@ -716,6 +716,12 @@ footer p {
   color: var(--cor-oposta-principal);
 }
 
+#portfolio-page .btn-opposite{
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
 #portfolio-page article.internal {
   padding: 2rem;
   background-color: var(--cor-fundo-cartao);
