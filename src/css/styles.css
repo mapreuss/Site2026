@@ -297,13 +297,16 @@ h3 {
 }
 
 /* ---- HEADER ---- */
+.bg-light{
+  position: sticky;
+  top: 0;
+  background-color: var(--cor-fundo-principal);
+  z-index: 10;
+}
 header {
   display: flex;
   justify-content: space-between;
   padding: 20px 1.5rem;
-  position: sticky;
-  top: 0;
-  background-color: var(--cor-fundo-principal);
   max-width: 80rem;
   margin: 0 auto;
 }
@@ -847,4 +850,30 @@ footer p {
 #contato .agenda a {
   background-color: var(--cor-oposta-secundaria);
   color: var(--cor-texto-botao-primario);
+}
+
+/* ---- DARK BG ---- */
+.dark-bg{
+  background-color: var(--cor-fundo-rodape);
+}
+.dark-bg h2{
+  color: var(--cor-texto-rodape-primario);
+}
+.dark-bg p, .dark-bg li{
+  color: var(--cor-texto-rodape-secundario);
+}
+.dark-bg .cards li{
+  background-color: var(--cor-fundo-rodape);
+  border-color: var(--cor-texto-rodape-secundario);
+}
+.dark-bg .cards .cabecalho span{
+  background-color: rgb(196 98 45 / 0.1);
+  border-color: rgb(196 98 45 / 0.2);
+}
+.dark-bg .cards article h3{
+  color: var(--cor-texto-rodape-primario);
+}
+.dark-bg .cards aside{
+  border-color: rgb(94 83 71 / var(--tw-border-opacity, 1));
+  margin-top: 2rem;
 }
