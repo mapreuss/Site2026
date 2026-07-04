@@ -1,5 +1,5 @@
 <ul class="cards">
-{% for item in collections.portfolio | reverse %}
+{% for item in collections.portfolio reversed %}
   {% if page.url != '/' or forloop.index <= 3 %}
   <li>
     <article>

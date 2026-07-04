@@ -7,10 +7,6 @@ export default function (eleventyConfig) {
     return arr.slice(0, limit);
   });
 
-  eleventyConfig.addFilter("reverse", (arr) => {
-    return Array.isArray(arr) ? arr.slice().reverse() : arr;
-  });
-
   eleventyConfig.addFilter("sortBy", (arr, property) => {
     if (!Array.isArray(arr) || !property) return arr;
     const keys = property.split(".");
