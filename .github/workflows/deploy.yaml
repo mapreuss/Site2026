@@ -32,8 +32,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
-          server-dir: /public_html/  # Ajuste para o seu caminho remoto
+          server-dir: public_html/   # Ajuste para o seu caminho remoto sem leading slash
           # Opcionais:
           port: 21                   # Se sua porta FTP não for a padrão (21)
-          secure: false              # Use 'true' para FTPS (SSL explícito)
-          clean: true               # Remove arquivos antigos no servidor
+          dangerous-clean-slate: true # Remove arquivos antigos no servidor
