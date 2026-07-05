@@ -1,0 +1,39 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main  # Ou sua branch de produção
+  workflow_dispatch:  # Permite execução manual via botão no GitHub
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Upload to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.0  # Versão fixa recomendada
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./public/
+          server-dir: /public_html/  # Ajuste para o seu caminho remoto
+          # Opcionais:
+          port: 21                   # Se sua porta FTP não for a padrão (21)
+          secure: false              # Use 'true' para FTPS (SSL explícito)
+          clean: true               # Remove arquivos antigos no servidor
