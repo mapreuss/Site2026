@@ -1,0 +1,40 @@
+---
+layout: base.njk
+---
+
+<section id="portfolio-page">
+    <article>
+        <p class="chapeu"><small>Blog</small></p>
+        <h2>Blog</h2>
+        <p>Dia a dia, hobbies, reflexões e nada com nada.</p>
+    </article>
+
+    <section class="col-2">
+        <article class="internal">
+            
+            {{ content | safe }}
+        
+            <ul class="tags">
+                <li>tag</li>
+            </ul>
+        </article>
+
+        <aside>
+            
+
+            <article class="widget">
+                <p class="chapeu"><small>Últimos posts</small></p>
+                <ul>
+                    {% for item in collections.portfolio | sortBy("fileSlug") | reverse %}
+                    <li>
+                        <a href="{{ item.url }}">{{ item.data.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </article>
+            
+            
+        </aside>
+    </section>
+
+</section>
