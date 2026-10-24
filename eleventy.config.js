@@ -7,6 +7,20 @@ export default function (eleventyConfig) {
     return arr.slice(0, limit);
   });
 
+  eleventyConfig.addFilter("formatarDataBR", function(dataInput) {
+    if (!dataInput) return "";
+    if (typeof dataInput === "string" && /^\d{4}-\d{2}-\d{2}/.test(dataInput)) {
+      const partes = dataInput.substring(0, 10).split("-");
+      return `${partes[2]}/${partes[1]}/${partes[0]}`;
+    }
+    const data = dataInput instanceof Date ? dataInput : new Date(dataInput);
+    if (isNaN(data.getTime())) return String(dataInput);
+    const dia = String(data.getDate()).padStart(2, "0");
+    const mes = String(data.getMonth() + 1).padStart(2, "0");
+    const ano = data.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+  });
+
   eleventyConfig.addFilter("sortBy", (arr, property) => {
     if (!Array.isArray(arr) || !property) return arr;
     const keys = property.split(".");
