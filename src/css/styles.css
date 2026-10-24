@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--cor-texto-primario);
 }
 
-p, small, li, span {
+p, small, li, span, td, figcaption {
   font-family: var(--fonte-texto);
   font-optical-sizing: auto;
   font-weight: 400;
@@ -125,7 +125,7 @@ section.col-2 article{
   cursor: pointer;
   font-weight: 500;
 }
-p {
+p, td {
   margin: 0;
   padding: 0;
   line-height: 1.625rem;
@@ -136,6 +136,7 @@ p {
 p em {
   font-family: var(--fonte-titulo);
   font-size: 1.2em;
+  font-weight: bold;
 }
 
 .chapeu {
@@ -308,9 +309,10 @@ h3 {
   border-radius: 0.125rem;
   background-color: var(--cor-fundo-icone-email);
 }
-.tags li a {
+.tags li a, .internal .tags li a {
   color: inherit;
   text-decoration: none;
+  border-bottom: none;
 }
 .tags li a:hover {
   text-decoration: underline;
@@ -928,10 +930,30 @@ footer p {
   margin-bottom: 2em;
 }
 
+figure{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+figure img{
+  max-width: 80%;
+  margin: 0 auto 2rem auto;
+  border-radius: 0.5rem;
+}
+
+.blog-card figure img{
+  max-width: 100%;
+}
+
 #blog-cards figure{
   padding: 0;
   margin: -32px -32px 2rem -32px;
-  width: calc(100% + 64px);
+  max-width: calc(100% + 64px);
   overflow: hidden;
   height: 230px;
   border-radius: 10px 10px 0 0;
@@ -941,6 +963,19 @@ footer p {
 
 #blog-cards figure a, #blog-cards figure img{
   width: 100%; 
+}
+
+table{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+table td{
+  padding-bottom: 0.5rem;
+}
+
+.internal p a, .internal li a, .internal td a, figcaption a{
+  color: var(--cor-destaque-principal);
+  border-bottom: 1px dashed var(--cor-destaque-principal)
 }
 
 @media (max-width: 1023px) {

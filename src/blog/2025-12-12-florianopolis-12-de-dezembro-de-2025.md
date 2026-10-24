@@ -55,15 +55,12 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":284,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/image.png" alt="Quadro 1 - Close no rosto de uma moça sorridente usando rabo de cavalo. Ela está pensando &quot;Finalmente vou sentir o gostinho da vitória&quot;
-
-Quadro 2 - Ela abaixa a cabeça e alguém coloca uma medalha de ouro nela
-
-Quadro 3 - Ela faz uma expressão de nojo como se tivesse acabado de tomar um remédio bem ruim
-
-último quadro - Close na medalha que ela está segurando, na qual podemos ler &quot;feito com preparado sabor vitória&quot;" class="wp-image-284"/><figcaption class="wp-element-caption">Quadrinho de <a href="https://www.catarse.me/linhadotrem" data-type="link" data-id="https://www.catarse.me/linhadotrem">Linha do Trem</a></figcaption></figure>
+<figure class="wp-block-image size-full">
+<img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/image.png" alt="Quadro 1 - Close no rosto de uma moça sorridente usando rabo de cavalo. Ela está pensando &quot;Finalmente vou sentir o gostinho da vitória&quot; Quadro 2 - Ela abaixa a cabeça e alguém coloca uma medalha de ouro nela Quadro 3 - Ela faz uma expressão de nojo como se tivesse acabado de tomar um remédio bem ruim último quadro - Close na medalha que ela está segurando, na qual podemos ler &quot;feito com preparado sabor vitória&quot;" />
+<figcaption class="wp-element-caption"><a href="https://www.catarse.me/linhadotrem" data-type="link" data-id="https://www.catarse.me/linhadotrem">Quadrinho de  Linha do Trem</a></figcaption>
+</figure>
 <!-- /wp:image -->
-
+<br>
 <!-- wp:paragraph -->
 <p>A última crise que eu tive -- além da de tédio e a de estética -- foi aquele vídeo que mostra um copo de coca-cola embaixo da torneira ficando cada vez mais claro e limpo, mas ainda demora muito. "Ain porque o processo é assim, aos poucos. Demora". Eu entrei numa vibe "se depende só de mim, então deixa. Desisto.".</p>
 <!-- /wp:paragraph -->

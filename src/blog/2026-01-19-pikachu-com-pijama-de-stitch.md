@@ -48,7 +48,6 @@ sudo systemctl disable ModemManager</code></pre>
 <!-- /wp:paragraph -->
 
 <!-- wp:gallery {"linkTo":"none"} -->
-<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":328,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-19-at-14.09.02-576x1024.jpeg" alt="" class="wp-image-328"/></figure>
 <!-- /wp:image -->
 
@@ -70,7 +69,6 @@ sudo systemctl disable ModemManager</code></pre>
 
 <!-- wp:image {"id":329,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-19-at-14.03.12-576x1024.jpeg" alt="" class="wp-image-329"/></figure>
-<!-- /wp:image --></figure>
 <!-- /wp:gallery -->
 
 <!-- wp:paragraph -->

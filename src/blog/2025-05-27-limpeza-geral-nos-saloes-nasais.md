@@ -47,7 +47,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
-<figure class="wp-block-video aligncenter" style="max-width: 300px"><video controls src="/wp-content/uploads/2025/05/v09044g40000cthmlk7og65m0gcvtmeg.mp4"></video></figure>
+<figure class="wp-block-video aligncenter" style="max-width: 300px"><video controls src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/05/v09044g40000cthmlk7og65m0gcvtmeg.mp4"></video></figure>
 <!-- /wp:html -->
 
 <!-- wp:paragraph -->
@@ -85,7 +85,7 @@ https://youtu.be/-CmrcdxhVyU?si=INIDTXIvUbrgLX4b
 <!-- /wp:paragraph -->
 
 <!-- wp:video {"id":247} -->
-<figure class="wp-block-video"><video autoplay controls loop muted src="/wp-content/uploads/2025/05/Reddit-Video.mp4"></video></figure>
+<figure class="wp-block-video"><video autoplay controls loop muted src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/05/Reddit-Video.mp4"></video></figure>
 <!-- /wp:video -->
 
 <!-- wp:paragraph {"align":"center"} -->

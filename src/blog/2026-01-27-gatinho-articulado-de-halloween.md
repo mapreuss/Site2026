@@ -45,7 +45,6 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:gallery {"linkTo":"none"} -->
-<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":343,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2026/01/IMG_6897.jpg" alt="" class="wp-image-343"/></figure>
 <!-- /wp:image -->
 
@@ -91,7 +90,6 @@ format: false
 
 <!-- wp:image {"id":357,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2026/01/IMG_6936.jpg" alt="" class="wp-image-357"/></figure>
-<!-- /wp:image --></figure>
 <!-- /wp:gallery -->
 
 <!-- wp:paragraph -->
