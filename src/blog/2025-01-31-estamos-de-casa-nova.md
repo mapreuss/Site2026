@@ -1,0 +1,15 @@
+---
+id: 104
+title: 'Estamos de casa nova'
+date: '2025-01-31T12:08:38-03:00'
+author: marta
+excerpt: ''
+guid: 'https://martinha.online/neuroses-cotidianas/2025/01/31/estamos-de-casa-nova/'
+permalink: /2025/01/31/estamos-de-casa-nova/
+image: /wp-content/uploads/2025/03/rxh2btisofm-363x188.jpg
+categories:
+    - 'produtos digitais'
+format: false
+---
+
+<p>Eu gostava bastante do Substack. Porque é bonito; é simples; me trouxe de volta    um sentimento de blogueiragem raiz, apesar das newsletters que sigo por lá serem    bem profissionais. Inclusive pago pela <a        href="https://garapuletter.substack.com/">Garapuvu</a>, que é minha    principal fonte de informação sobre Florianópolis.</p><p>Mas eu sabia que os donos eram fascistas, bem alinhados com Trump e Elon Musk.    Veja, se eu saí do Twitter (RIP), se eu desinstalei o Instagram (depois instalei    de novo enquanto um concorrente à altura não aparece, mas já estamos caminhando    pra isso), já não tenho Facebook há anos... ficou incongruente me manter no    Substack. </p><p>Não tem jeito: conteúdo nosso é self-hosted. Não quero meu conteúdo em lugares    que eu não sei como vai ser usado. Tem como escapar de tudo? Não. O Google mesmo    tem minha vida todinha e o trabalho que dá pra sair não compensa o esforço. Pelo    menos não agora.</p><p>Então, resolvi migrar o blog para a minha hospedagem.</p><h3>Ferramentas escolhidas</h3><p>Eu queria um blog simples, sem muita frescura, sem ser Wordpress porque não    adianta fugir do sujo indo pro mal-lavado. Queria algo open source. Procurei e    procurei, fiquei um bom tempo olhando porque foi difícil achar uma alternativa</p><ul>    <li>Bonita, ou pelo menos não horrorosa</li>    <li>Fácil de instalar em um host comum com FTP, PHP no máximo um MySQL</li>    <li>Que tivesse interface para eu poder postar do tablet também.</li></ul><p>No fim, acabei testando o <a href="https://www.htmly.com/">HTMLy</a>. Ele é um    gerador de páginas estáticas, de markdown, mas tem uma interface amigável    ("bonita" é exagero, mas pelo menos não é horrorosa). Tem temas fáceis de mexer.    É um gerenciador de páginas. Pelo menos tem RSS.</p><p>Aí vem a outra parte que eu gostava no Substack: enviar e-mails para os leitores.    Não eram muitos, mas eu queria manter isso.</p><p>Exportei os e-mails de lá e fiz um cenário no <a href="https://make.com">Make.com</a>.    Sempre que um post é enviado via RSS (então não preciso fazer nada além de    publicar um post), ele percorre uma planilha com os endereços de vocês e manda    um e-mail. </p><p>Também fiz um cenário para gerenciar os assinantes. Dá para se adicionar ou    remover da lista com facilidade. </p><p>Me avisem se está funcionando. Coloquei comentários do disqus para facilitar.</p><p>Não que eu tenha muita coisa pra falar, ou que queira me expor. Mas é bom ter a    opção.</p>

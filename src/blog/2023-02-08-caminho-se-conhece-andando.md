@@ -1,0 +1,15 @@
+---
+id: 119
+title: 'caminho se conhece andando'
+date: '2023-02-08T11:07:52-03:00'
+author: marta
+excerpt: ''
+guid: 'https://martinha.online/neuroses-cotidianas/2023/02/08/caminho-se-conhece-andando/'
+permalink: /2023/02/08/caminho-se-conhece-andando/
+image: /wp-content/uploads/2025/03/u0vgcioqg08-363x188.jpg
+categories:
+    - reflexões
+format: false
+---
+
+<p>então vez em quando é bom se perder.</p><p>eu sou uma menina muito obediente. desde bem pequena, aprendi a suprimir minhas    emoções para agradar aos adultos que me cuidavam. mais que isso: como forma de    lidar com a violência de não ter as próprias emoções validadas e consideradas,    passei a acreditar na narrativa deles sobre mim. dessa forma, eu não me    desenvolvi. apenas aceitei o papel que me foi imposto: o papel de boa menina.</p><p>por algum motivo (talvez o motivo seja esse modelo ser insustentável) meus    terapeutas querem me tirar desse falso-conforto e me fazer pensar por mim mesma.</p><p>mas como todos meus amigos millenials de 30 e poucos quase 40, eu só quero que    alguém me diga quem eu sou e como eu devo me comportar. pode ser meus pais, mas    na falta deles, pode ser a astrologia (sol em sagitário, lua em aquário,    ascendente em áries), pode ser um tarot, búzios, pode ser a própria terapia, uma    lista de sintomas de autistas ou tdah, qualquer diagnóstico serve. um teste da    revista capricho, um colega de trabalho, qualquer. coisa.</p><p>sem isso, eu me sinto perdida como no post passado. eu não tenho referência de    mundo, eu me sinto uma geleia sem esqueleto. como um pássaro caseiro liberado da    gaiola, que não sobrevive na natureza.</p><p>fazer o que você quer é o que mais te assusta</p><p>mas o mundo comunica suas regras. o pinterest é cheio de regras de produtividade,    de auto-cuidado, metas, templates de notion com foco em habit tracker e fazer    mais nas suas 24 horas. ou eu estou mergulhada nisso até os cabelos, por adorar    que alguém me diga o que eu preciso fazer pra ser uma boa menina.</p><p>essa dor de se perder em milhares de referências durou semanas (talvez anos e    meses). e a coisa mais simples foi um exemplo bom pra me tirar desse furacão.</p><p>estávamos almoçando e eu, do nada, desabafei: quero alisar meu cabelo. meu marido    me olhou confuso, sabendo dos meus esforços para definir os cachos, entre    tutoriais, cremes, geleias capilares, etc. eu justifiquei: “ah, nem fica    enrolado, nem liso! nem lá, nem cá!” e ele resolveu minha vida inteira com um    simples: “é por isso que é bonito”.</p><blockquote>    <p>eu sou em mim mesma e eu me basto.</p></blockquote><p>comecei a entender que caminho se conhece andando. e acho que destravei um pouco.    vi que tinha coisas muito pequenas que eu estava segurando, com medo, como se    fosse uma responsabilidade imensa com um grande risco coisas como pintar o    cabelo ou fazer uma tatuagem.</p><p>é nada.</p><p>ainda não sei muito sobre liberdade; a neurose aprisiona. mas… acho que consigo    começar a experimentar.</p>

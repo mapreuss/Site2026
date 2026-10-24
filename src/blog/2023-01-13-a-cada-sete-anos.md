@@ -1,0 +1,15 @@
+---
+id: 126
+title: 'a cada sete anos&#8230;'
+date: '2023-01-13T11:01:30-03:00'
+author: marta
+excerpt: ''
+guid: 'https://martinha.online/neuroses-cotidianas/2023/01/13/a-cada-sete-anos/'
+permalink: /2023/01/13/a-cada-sete-anos/
+image: /wp-content/uploads/2025/03/ebivdbb83y0-363x188.jpg
+categories:
+    - reflexões
+format: false
+---
+
+<p>...todas as células do seu corpo são substituídas por células novas, eles dizem.</p><p>Sempre achei isso esquisito, porque pode ser que meu cabelo de hoje seja mais    novo do que sete anos, mas e meus olhos? Se bem que, há sete anos, eles não    tinham astigmatismo e miopia. Meu rosto mudou, com mais linhas de expressão.    Minha pele, o formato dos dedos dos meus pés. As manchas de espinhas no rosto.    Aos 35 anos, já troquei de células 5 vezes. E sempre me sinto à flor da pele.</p><p>Fiz muita terapia na minha vida, mas análise faz um ano. Não conseguia fazer    antes. Precisava de um alicerce, como quem coloca uma lona em casa antes de    começar a obra, como se um plástico grosso pudesse impedir a poeira e a sujeira    de atingirem o que nos é mais caro. Ilusão.</p><p>Eu seguia um psiquiatra no twitter que dizia que fazer terapia era como entrar em    uma biblioteca da mente e tirar todos os livros do lugar que seus pais    colocaram, para re-colocar do seu jeito. E é bem isso mesmo. Uma bagunça. Livro    pra todo lado. Coisa que eu nem lembrava que tinha. Vergonha, raiva.    Ressignificar tudo.</p><p>Pela primeira vez em 12 anos, me senti progredindo. Achei que tinha entendido    algumas coisas. Parado de me olhar e olhar minha história sob as lentes    distorcidas de um óculos que não era meu. Foi estranho e excitante. Como se tudo    que eu soubesse sobre mim e a minha história precisasse ser re-visto,    re-checado, como se eu fosse páginas em branco. Na verdade, acho que estava    vendo talas sobre a ferida, gesso sobre o membro partido. Esse tipo de tela em    branco.</p><p>E logo depois da excitação, como sempre, a onda arrebatou nas minhas costas, me    jogando pra frente e me deixando sem ar. É difícil escrever sem dar exemplos, só    fazendo alegorias amplas, mas é tanta coisa que acho que eu nem saberia    exemplificar de qualquer maneira.</p><p>Só sei que doeu. Já estava doendo antes, é claro, mas quando você vê a ferida a    dor parece que dói mais ao mesmo tempo que faz sentido e rola um alívio. É    estranho.</p><p>Eu tô tão perdida. Eu não sei quem eu sou, eu não sei do que eu gosto e desgosto,    eu não sei o que eu quero e não sei mesmo se eu deveria sequer querer alguma    coisa.</p><p>Vai ver que a vida é não querer nada, e que foi aí que eu errei.</p><p>Vai ver que eu estou sempre procurando perguntas que não existem para respostas    inventadas.</p><p>Vai ver que eu só quero alguma figura de autoridade me dizendo como organizar os    livros, já que agora estão todos no chão e eu não sei o que fazer com eles.</p><p>É cansativo e eu tô exausta. Mas precisa ser feito. E temos no mínimo mais sete    anos pela frente.</p>

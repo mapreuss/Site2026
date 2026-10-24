@@ -1,0 +1,15 @@
+---
+id: 120
+title: 'Ainda está uma bagunça, isso aqui'
+date: '2023-07-13T11:10:06-03:00'
+author: marta
+excerpt: ''
+guid: 'https://martinha.online/neuroses-cotidianas/2023/07/13/ainda-esta-uma-bagunca-isso-aqui/'
+permalink: /2023/07/13/ainda-esta-uma-bagunca-isso-aqui/
+image: /wp-content/uploads/2025/03/oqj0chxpzoi-363x188.jpg
+categories:
+    - reflexões
+format: false
+---
+
+<p>Eu não tenho nenhuma obrigação com isso aqui, e é isso que me deixa na paz. Mas    eu confesso que criei um bloguinho porque tinha saudade de escrever, e quando    fui escrever, saiu tudo meio torto, meio sem pé nem cabeça, tipo dia de faxina    mas daquelas que você tira todos os livros da estante etc etc.</p><p>Acho que desaprendi a escrever com o tempo; pode ser que seja porque também    desaprendi a ler direito. Pegar um livro, saborear. Gosto de fazer isso quando    viajo, mas também tenho viajado pouco. E tudo bem.</p><p>Eu fico: Ah, porque não preciso me justificar pra mim mesma. Mas tô aqui    justificando, né? Sempre que eu venho escrever eu me pego nesses loopings, apago    tudo e deixo pra lá.</p><p>Hoje não vou deixar. Lamento. Às vezes a gente precisa fazer algo que não gosta    muito até chegar onde a gente gosta, onde a gente quer. (Meu problema é ficar    para sempre na parte que eu não gosto e nunca chegar na que eu realmente quero).    E também eu tô meio que nessa fase de reconstrução ainda. Não é uma coisa    rápida, não é uma coisa com tempo linear. É mais uma grande bola de uma coisa    wibbly-wobbly, timey-wimey.</p><p>Por exemplo, eu quis vir aqui falar de desmame, um tema super sensível pra mim.    Diz que calada vence né? Eu sou uma grande perdedora, porque sempre me sinto em    dívida com o holofote digital: eu quero contar, dividir, expor. Não sei porquê.    Talvez seja para ganhar biscoito, ganhar validação. Alguém que me diga que estou    indo bem, fazendo a coisa certa, que eu tô de parabéns.</p><p>Essa necessidade patológica de validação me atrasa demais a vida. Me leva para    onde não quero ir e a me sacrificar por demandas que ninguém se importa. Consome    minha energia, me impede de demandar e impor limites.</p><p>O irônico foi que quando comecei a demandar e impor limites, a necessidade de    validação diminuiu. Eu achei que precisava ser o contrário: diminui a    necessidade para poder pedir; mas foi na prática, no fazer, no experimentar, que    eu fui ganhando meu tão sonhado valor.</p><p>E quando eu ganhei meu próprio valor, tudo foi se soltando, azeitando,    melhorando, fluindo. A segurança de merecer ser tratada com respeito, de ter    sentimentos importantes, de não me sacrificar porque “isso é besteira, para de    frescura”.</p><p>Acho que minha cabeça vai se ramificando em tantas coisas, tantas explicações,    justificativas, que o tema principal se perde. Afinal, ele mesmo é um sintoma.    Uma consequência.</p><p>E agora vou publicar isso aqui: sem pé, nem cabeça, nem foco, nem desmame.</p><p>Às vezes as coisas só vão rolando. E tá tudo bem.</p>
