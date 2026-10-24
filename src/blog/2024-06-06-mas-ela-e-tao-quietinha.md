@@ -6,7 +6,7 @@ author: marta
 excerpt: 'O impacto do diagnóstico tardio de TDAH aos 36 anos, os efeitos da medicação e a desconstrução da imagem da menina boazinha e quieta.'
 guid: 'https://martinha.online/neuroses-cotidianas/2024/06/06/mas-ela-e-tao-quietinha/'
 permalink: /2024/06/06/mas-ela-e-tao-quietinha/
-image: /wp-content/uploads/2025/03/pggpvo0ghy0-363x188.jpg
+image: /wp-content/uploads/2025/03/pggpvo0ghy0.jpg
 categories:
     - reflexões
 format: false

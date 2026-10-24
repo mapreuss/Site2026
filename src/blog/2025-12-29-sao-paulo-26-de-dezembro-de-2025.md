@@ -8,7 +8,7 @@ guid: 'https://martinha.online/neuroses-cotidianas/?p=295'
 permalink: /2025/12/29/sao-paulo-26-de-dezembro-de-2025/
 bluesky_shared:
     - '1'
-image: /wp-content/uploads/2025/12/IMG_6581-1-scaled-e1767035867762-900x509.jpg
+image: /wp-content/uploads/2025/12/IMG_6581-1-scaled-e1767035867762.jpg
 categories:
     - cartas
 format: false
@@ -27,7 +27,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":300,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2025/12/image-4-1024x456.png" alt="" class="wp-image-300"/></figure>
+<figure class="wp-block-image size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/image-4-1024x456.png" alt="" class="wp-image-300"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -39,7 +39,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":296,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2025/12/image-1.png" alt="" class="wp-image-296"/></figure>
+<figure class="wp-block-image aligncenter size-full"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/image-1.png" alt="" class="wp-image-296"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -57,7 +57,7 @@ format: false
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":297,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/12/image-2.png" alt="" class="wp-image-297"/></figure>
+<figure class="wp-block-image size-full"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/image-2.png" alt="" class="wp-image-297"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -65,13 +65,13 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":305,"aspectRatio":"0.5625028134143597","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2025/12/IMG_6583-576x1024.jpg" alt="" class="wp-image-305" style="aspect-ratio:0.5625028134143597"/></figure>
+<figure class="wp-block-image size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/IMG_6583-576x1024.jpg" alt="" class="wp-image-305" style="aspect-ratio:0.5625028134143597"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"id":298,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/12/image-3.png" alt="" class="wp-image-298"/></figure>
+<figure class="wp-block-image size-full"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/image-3.png" alt="" class="wp-image-298"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -79,7 +79,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":306,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/12/2025-12-29_16-14.png" alt="" class="wp-image-306"/></figure>
+<figure class="wp-block-image size-full"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/2025-12-29_16-14.png" alt="" class="wp-image-306"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -89,7 +89,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":301,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/12/image-5.png" alt="" class="wp-image-301"/></figure>
+<figure class="wp-block-image size-full"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/image-5.png" alt="" class="wp-image-301"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

@@ -3,6 +3,9 @@
   {% if page.url != '/' or forloop.index <= 3 %}
   <li class="blog-card" data-categories="{{ item.data.categories | categoriaListaParaData }}" data-tags="{{ item.data.tags | tagListaParaData }}">
     <article>
+      <figure>
+        <a href="{{ item.url }}"><img src="http://martinha.online/neuroses-cotidianas/{{ item.data.image }}"></a>
+      </figure>
       <p class="header">
         <span>{{ item.data.date | formatarDataBR }}</span>
       </p>

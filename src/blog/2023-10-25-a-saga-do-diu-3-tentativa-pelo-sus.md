@@ -6,7 +6,7 @@ author: marta
 excerpt: 'Como recorri ao SUS para colocar o DIU de cobre e me surpreendi com a agilidade, humanização e respeito no atendimento.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/10/25/a-saga-do-diu-3-tentativa-pelo-sus/'
 permalink: /2023/10/25/a-saga-do-diu-3-tentativa-pelo-sus/
-image: /wp-content/uploads/2025/03/nfvdkihxylu-363x188.jpg
+image: /wp-content/uploads/2025/03/nfvdkihxylu.jpg
 categories:
     - corpo
 format: false

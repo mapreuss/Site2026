@@ -8,7 +8,7 @@ guid: 'https://martinha.online/neuroses-cotidianas/2023/10/19/faz-3-anos-que-eu-
 permalink: /2023/10/19/faz-3-anos-que-eu-tive-um-filho-e-nao-sei-se-ja-virei-mae/
 bluesky_shared:
     - '1'
-image: /wp-content/uploads/2025/03/9weq4xcm3_q-363x188.jpg
+image: /wp-content/uploads/2025/03/9weq4xcm3_q.jpg
 categories:
     - maternidade
 format: false

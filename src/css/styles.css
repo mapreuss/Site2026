@@ -785,6 +785,10 @@ footer p {
   margin-bottom: 1rem;
 }
 
+#portfolio-page h3 a{
+  color: var(--cor-destaque-principal);
+}
+
 /* ---- FERRAMENTAS ---- */
 
 
@@ -922,6 +926,21 @@ footer p {
 }
 #blog-cards li{
   margin-bottom: 2em;
+}
+
+#blog-cards figure{
+  padding: 0;
+  margin: -32px -32px 2rem -32px;
+  width: calc(100% + 64px);
+  overflow: hidden;
+  height: 230px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+#blog-cards figure a, #blog-cards figure img{
+  width: 100%; 
 }
 
 @media (max-width: 1023px) {

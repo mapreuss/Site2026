@@ -6,7 +6,7 @@ author: marta
 excerpt: 'Uma reflexão de fim de ano sobre abandonar metas rígidas de autoaperfeiçoamento para buscar apenas uma vida com mais leveza.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/12/23/ano-que-vem-nao-quero-melhorar/'
 permalink: /2023/12/23/ano-que-vem-nao-quero-melhorar/
-image: /wp-content/uploads/2025/03/pvk6sp8fbdi-363x188.jpg
+image: /wp-content/uploads/2025/03/pvk6sp8fbdi.jpg
 categories:
     - reflexões
 format: false

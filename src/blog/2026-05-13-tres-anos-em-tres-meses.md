@@ -6,7 +6,7 @@ author: marta
 excerpt: 'O relato do desgaste físico e mental provocado por meses de reforma emergencial no muro de casa e a sensação de sobrevivência pós-obra.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=384'
 permalink: /2026/05/13/tres-anos-em-tres-meses/
-image: /wp-content/uploads/2026/03/IMG_6313-900x1600.jpg
+image: /wp-content/uploads/2026/03/IMG_6313.jpg
 categories:
     - vida
 format: false

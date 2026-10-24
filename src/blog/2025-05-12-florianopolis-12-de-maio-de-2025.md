@@ -6,7 +6,7 @@ author: marta
 excerpt: 'Pensamentos de outono sobre aceitação, o diagnóstico de novos cuidados com o corpo e a ansiedade na véspera da cirurgia nasal.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=238'
 permalink: /2025/05/12/florianopolis-12-de-maio-de-2025/
-image: /wp-content/uploads/2025/05/IMG-3839-from-Google-Photos-363x188.jpg
+image: /wp-content/uploads/2025/05/IMG-3839-from-Google-Photos.jpg
 categories:
     - cartas
 format: false

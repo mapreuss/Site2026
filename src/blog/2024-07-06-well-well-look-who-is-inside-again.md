@@ -6,7 +6,7 @@ author: marta
 excerpt: 'Um desabafo honesto sobre as recaídas da depressão e o peso esmagador das cobranças para se manter funcional e produtiva o tempo todo.'
 guid: 'https://martinha.online/neuroses-cotidianas/2024/07/06/well-well-look-who-is-inside-again/'
 permalink: /2024/07/06/well-well-look-who-is-inside-again/
-image: /wp-content/uploads/2025/03/uuggxubfyic-363x188.jpg
+image: /wp-content/uploads/2025/03/uuggxubfyic.jpg
 categories:
     - reflexões
 format: false

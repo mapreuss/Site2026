@@ -6,7 +6,7 @@ author: marta
 excerpt: 'As dificuldades e perrengues inesperados ao tentar configurar um blog no WordPress moderno e a reflexão sobre acessibilidade no open source.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=213'
 permalink: /2025/03/10/muito-mais-dificil-do-que-deveria-ser/
-image: /wp-content/uploads/2025/03/nwiexscqxdm-363x188.jpg
+image: /wp-content/uploads/2025/03/nwiexscqxdm.jpg
 categories:
     - 'produtos digitais'
 format: false

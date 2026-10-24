@@ -6,7 +6,7 @@ author: marta
 excerpt: 'Um desabafo sobre representatividade e a indignação ao ver um hemangioma ser pintado de forma caricata em vídeos da internet.'
 guid: 'https://martinha.online/neuroses-cotidianas/2025/01/08/hemangioma-face/'
 permalink: /2025/01/08/hemangioma-face/
-image: /wp-content/uploads/2025/01/Hemangioma-Face-Jan-30-2025-363x188.jpg
+image: /wp-content/uploads/2025/01/Hemangioma-Face-Jan-30-2025.jpg
 categories:
     - corpo
 format: false
@@ -33,7 +33,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":169,"sizeSlug":"large","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-large"><img src="/wp-content/uploads/2025/01/Hemangioma-Face-Jan-30-2025-576x1024.jpg" alt="" class="wp-image-169"/><figcaption class="wp-element-caption"> <em>Minha amiga Carol fez esse quadro lindo que é, literalmente, a minha cara.</em></figcaption></figure>
+<figure class="wp-block-image aligncenter size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/01/Hemangioma-Face-Jan-30-2025-576x1024.jpg" alt="" class="wp-image-169"/><figcaption class="wp-element-caption"> <em>Minha amiga Carol fez esse quadro lindo que é, literalmente, a minha cara.</em></figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

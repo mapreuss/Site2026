@@ -6,7 +6,7 @@ author: marta
 excerpt: 'Os bastidores de como usei ferramentas de inteligência artificial e vibe coding para reconstruir meu site pessoal e automatizar o deploy.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=263'
 permalink: /2025/06/23/site-novo-no-ar/
-image: /wp-content/uploads/2025/06/Screenshot-2025-06-23-at-09.32.15-363x188.png
+image: /wp-content/uploads/2025/06/Screenshot-2025-06-23-at-09.32.15.png
 categories:
     - 'produtos digitais'
 format: false
@@ -25,7 +25,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"lightbox":{"enabled":false},"id":264,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2025/06/Screenshot-2025-06-23-at-09.32.15-1024x467.png" alt="" class="wp-image-264"/></figure>
+<figure class="wp-block-image size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/06/Screenshot-2025-06-23-at-09.32.15-1024x467.png" alt="" class="wp-image-264"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

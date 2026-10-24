@@ -11,7 +11,7 @@ enclosure:
     - "https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/05/Reddit-Video.mp4\n702923\nvideo/mp4\n"
 bluesky_shared:
     - '1'
-image: /wp-content/uploads/2025/05/WhatsApp-Image-Feb-21-2025-363x188.jpeg
+image: /wp-content/uploads/2025/05/WhatsApp-Image-Feb-21-2025.jpeg
 categories:
     - corpo
 tags:

@@ -8,7 +8,7 @@ guid: 'https://martinha.online/neuroses-cotidianas/?p=257'
 permalink: /2025/07/13/os-cuspes-que-caem-na-nossa-testa/
 bluesky_shared:
     - '1'
-image: /wp-content/uploads/2025/07/pexels-photo-694587-363x188.jpeg
+image: /wp-content/uploads/2025/07/pexels-photo-694587.jpeg
 categories:
     - maternidade
 format: false
@@ -59,7 +59,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":258,"width":"410px","height":"auto","sizeSlug":"large","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="/wp-content/uploads/2025/06/Photo-from-Google-Photos-576x1024.jpg" alt="" class="wp-image-258" style="width:410px;height:auto"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/06/Photo-from-Google-Photos-576x1024.jpg" alt="" class="wp-image-258" style="width:410px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

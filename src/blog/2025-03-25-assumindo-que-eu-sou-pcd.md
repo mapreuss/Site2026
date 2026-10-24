@@ -6,7 +6,7 @@ author: marta
 excerpt: 'O acolhimento da minha condição como PcD e o reconhecimento de que adaptações e tratamentos diários são formas de cuidar de mim com carinho.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=222'
 permalink: /2025/03/25/assumindo-que-eu-sou-pcd/
-image: /wp-content/uploads/2025/03/tozquhd8l38-363x188.jpg
+image: /wp-content/uploads/2025/03/tozquhd8l38.jpg
 categories:
     - corpo
 format: false

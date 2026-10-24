@@ -6,7 +6,7 @@ author: marta
 excerpt: 'O relato das burocracias, desencontros de informações e exigências cansativas ao tentar colocar o DIU pelo plano de saúde.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/10/24/a-saga-do-diu-2-tentativa-pelo-convenio/'
 permalink: /2023/10/24/a-saga-do-diu-2-tentativa-pelo-convenio/
-image: /wp-content/uploads/2025/03/ltnvqhdkkmw-363x188.jpg
+image: /wp-content/uploads/2025/03/ltnvqhdkkmw.jpg
 categories:
     - corpo
 format: false

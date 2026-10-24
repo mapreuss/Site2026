@@ -6,7 +6,7 @@ author: marta
 excerpt: 'Um conto de ficção científica gerado por inteligência artificial sobre a fuga de crenças opressoras e o custo avassalador da liberdade.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/08/29/a-vila-das-crencas/'
 permalink: /2023/08/29/a-vila-das-crencas/
-image: /wp-content/uploads/2025/03/kl1cegqofwc-363x188.jpg
+image: /wp-content/uploads/2025/03/kl1cegqofwc.jpg
 categories:
     - contos
 format: false

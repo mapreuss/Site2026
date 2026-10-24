@@ -8,7 +8,7 @@ guid: 'https://martinha.online/neuroses-cotidianas/?p=283'
 permalink: /2025/12/12/florianopolis-12-de-dezembro-de-2025/
 bluesky_shared:
     - '1'
-image: /wp-content/uploads/2025/12/eaojez8746k-900x600.jpg
+image: /wp-content/uploads/2025/12/eaojez8746k.jpg
 categories:
     - cartas
 format: false
@@ -55,7 +55,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":284,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="/wp-content/uploads/2025/12/image.png" alt="Quadro 1 - Close no rosto de uma moça sorridente usando rabo de cavalo. Ela está pensando &quot;Finalmente vou sentir o gostinho da vitória&quot;
+<figure class="wp-block-image size-full"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/12/image.png" alt="Quadro 1 - Close no rosto de uma moça sorridente usando rabo de cavalo. Ela está pensando &quot;Finalmente vou sentir o gostinho da vitória&quot;
 
 Quadro 2 - Ela abaixa a cabeça e alguém coloca uma medalha de ouro nela
 

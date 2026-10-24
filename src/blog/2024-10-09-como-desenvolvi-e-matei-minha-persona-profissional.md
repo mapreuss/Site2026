@@ -8,7 +8,7 @@ guid: 'https://martinha.online/neuroses-cotidianas/2024/10/09/como-desenvolvi-e-
 permalink: /2024/10/09/como-desenvolvi-e-matei-minha-persona-profissional/
 bluesky_shared:
     - '1'
-image: /wp-content/uploads/2024/10/Como-Desenvolvi-e-Matei-Minha-Persona-Profissional-3-scaled-e1743700005954-363x188.jpg
+image: /wp-content/uploads/2024/10/Como-Desenvolvi-e-Matei-Minha-Persona-Profissional-3-scaled-e1743700005954.jpg
 categories:
     - reflexões
 format: false
@@ -31,7 +31,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":175,"sizeSlug":"large","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-large"><img src="/wp-content/uploads/2024/10/Como-Desenvolvi-e-Matei-Minha-Persona-Profissional-2-576x1024.jpg" alt="" class="wp-image-175"/></figure>
+<figure class="wp-block-image aligncenter size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2024/10/Como-Desenvolvi-e-Matei-Minha-Persona-Profissional-2-576x1024.jpg" alt="" class="wp-image-175"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -59,7 +59,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":176,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2024/10/Como-Desenvolvi-e-Matei-Minha-Persona-Profissional-1-1024x869.png" alt="" class="wp-image-176"/></figure>
+<figure class="wp-block-image size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2024/10/Como-Desenvolvi-e-Matei-Minha-Persona-Profissional-1-1024x869.png" alt="" class="wp-image-176"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -71,7 +71,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":275,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2024/10/image-1024x615.png" alt="" class="wp-image-275"/></figure>
+<figure class="wp-block-image size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2024/10/image-1024x615.png" alt="" class="wp-image-275"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -119,7 +119,7 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":177,"sizeSlug":"large","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-large"><img src="/wp-content/uploads/2024/10/Como-Desenvolvi-e-Matei-Minha-Persona-Profissional-3-576x1024.jpg" alt="" class="wp-image-177"/></figure>
+<figure class="wp-block-image aligncenter size-large"><img src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2024/10/Como-Desenvolvi-e-Matei-Minha-Persona-Profissional-3-576x1024.jpg" alt="" class="wp-image-177"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

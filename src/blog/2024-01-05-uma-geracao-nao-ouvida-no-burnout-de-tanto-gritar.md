@@ -6,7 +6,7 @@ author: marta
 excerpt: 'Uma análise sobre a tirania dos algoritmos, o esgotamento dos criadores de conteúdo e a necessidade de postar com menos obrigação.'
 guid: 'https://martinha.online/neuroses-cotidianas/2024/01/05/uma-geracao-nao-ouvida-no-burnout-de-tanto-gritar/'
 permalink: /2024/01/05/uma-geracao-nao-ouvida-no-burnout-de-tanto-gritar/
-image: /wp-content/uploads/2025/03/xezxeh_fieu-363x188.jpg
+image: /wp-content/uploads/2025/03/xezxeh_fieu.jpg
 categories:
     - reflexões
 format: false

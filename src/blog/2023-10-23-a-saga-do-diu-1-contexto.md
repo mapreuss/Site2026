@@ -6,7 +6,7 @@ author: marta
 excerpt: 'O início da série sobre o DIU de cobre, contextualizando minhas restrições de saúde, a maternidade e a escolha pelo método contraceptivo.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/10/23/a-saga-do-diu-1-contexto/'
 permalink: /2023/10/23/a-saga-do-diu-1-contexto/
-image: /wp-content/uploads/2025/03/ie8ww5kux3o-363x188.jpg
+image: /wp-content/uploads/2025/03/ie8ww5kux3o.jpg
 categories:
     - corpo
 format: false
