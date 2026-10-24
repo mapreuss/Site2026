@@ -3,7 +3,7 @@ id: 217
 title: 'A mãe tá motorizada'
 date: '2025-03-16T12:33:40-03:00'
 author: marta
-excerpt: ''
+excerpt: 'A conquista da mobilidade e independência pelo bairro com a compra de uma scooter elétrica autopropelida após anos sem dirigir.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=217'
 permalink: /2025/03/16/a-mae-ta-motorizada/
 image: /wp-content/uploads/2025/03/Foto-Google-Fotos-363x188.jpg

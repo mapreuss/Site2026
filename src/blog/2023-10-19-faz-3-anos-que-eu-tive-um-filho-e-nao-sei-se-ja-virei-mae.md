@@ -3,7 +3,7 @@ id: 116
 title: 'Faz 3 anos que eu tive um filho e não sei se já virei mãe'
 date: '2023-10-19T11:12:26-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Reflexões sinceras no aniversário de três anos do meu filho sobre os desafios da maternidade real, culpas e a cura de traumas geracionais.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/10/19/faz-3-anos-que-eu-tive-um-filho-e-nao-sei-se-ja-virei-mae/'
 permalink: /2023/10/19/faz-3-anos-que-eu-tive-um-filho-e-nao-sei-se-ja-virei-mae/
 bluesky_shared:

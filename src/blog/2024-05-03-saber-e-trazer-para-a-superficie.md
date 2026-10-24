@@ -3,7 +3,7 @@ id: 117
 title: 'Saber é trazer para a superfície'
 date: '2024-05-03T07:47:31-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Como conhecimentos que pareciam adormecidos voltam à tona na hora certa, mostrando que nenhum aprendizado na vida é desperdiçado.'
 guid: 'https://martinha.online/neuroses-cotidianas/2024/05/03/saber-e-trazer-para-a-superficie/'
 permalink: /2024/05/03/saber-e-trazer-para-a-superficie/
 image: /wp-content/uploads/2025/03/qjs2r1lmmcw-363x188.jpg

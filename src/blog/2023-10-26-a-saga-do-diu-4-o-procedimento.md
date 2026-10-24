@@ -3,7 +3,7 @@ id: 111
 title: '[A saga do DIU] 4: O procedimento'
 date: '2023-10-26T13:32:01-03:00'
 author: marta
-excerpt: ''
+excerpt: 'O relato detalhado de como foi o procedimento de inserção do DIU no postinho de saúde, desmistificando o medo da dor.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/10/26/a-saga-do-diu-4-o-procedimento/'
 permalink: /2023/10/26/a-saga-do-diu-4-o-procedimento/
 image: /wp-content/uploads/2025/03/higeoqjs_ie-363x188.jpg

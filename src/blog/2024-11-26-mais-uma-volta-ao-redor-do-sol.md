@@ -3,7 +3,7 @@ id: 125
 title: 'Mais uma volta ao redor do Sol'
 date: '2024-11-26T14:01:32-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Um balanço aos 37 anos sobre conquistas importantes como a casa própria e o trabalho internacional, buscando errar com mais leveza.'
 guid: 'https://martinha.online/neuroses-cotidianas/2024/11/26/mais-uma-volta-ao-redor-do-sol/'
 permalink: /2024/11/26/mais-uma-volta-ao-redor-do-sol/
 image: /wp-content/uploads/2025/03/bqrzi0vi9x0-363x188.jpg

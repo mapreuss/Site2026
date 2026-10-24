@@ -3,7 +3,7 @@ id: 113
 title: '[A saga do DIU] 2: Tentativa pelo convênio'
 date: '2023-10-24T13:29:28-03:00'
 author: marta
-excerpt: ''
+excerpt: 'O relato das burocracias, desencontros de informações e exigências cansativas ao tentar colocar o DIU pelo plano de saúde.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/10/24/a-saga-do-diu-2-tentativa-pelo-convenio/'
 permalink: /2023/10/24/a-saga-do-diu-2-tentativa-pelo-convenio/
 image: /wp-content/uploads/2025/03/ltnvqhdkkmw-363x188.jpg

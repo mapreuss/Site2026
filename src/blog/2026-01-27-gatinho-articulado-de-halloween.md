@@ -3,7 +3,7 @@ id: 337
 title: 'Gatinho articulado de Halloween'
 date: '2026-01-27T16:54:35-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Os detalhes de fatiamento, impressão e pintura de gatinhos articulados feitos em 3D como um gesto de carinho para uma amiga.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=337'
 permalink: /2026/01/27/gatinho-articulado-de-halloween/
 bluesky_shared:

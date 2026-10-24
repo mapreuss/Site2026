@@ -2,23 +2,25 @@
 layout: base.njk
 ---
 
+{% set isPost = page.url != '/blog/' and page.url != '/blog' %}
+
 <section id="portfolio-page">
     <article class="page-title-section">
         <p class="chapeu"><small id="blog-chapeu">Blog</small></p>
-        {% if page.url == '/blog/' or page.url == '/blog' %}
-        <h2 id="blog-title">Blog</h2>
-        <p id="blog-description">Dia a dia, hobbies, reflexões e nada com nada.</p>
-        {% else %}
+        {% if isPost %}
         <h2 id="blog-title">{{ title | safe }}</h2>
         <p id="blog-description">{{ author }} em {{ (date or page.date) | formatarDataBR }}</p>
+        {% else %}
+        <h2 id="blog-title">Blog</h2>
+        <p id="blog-description">Dia a dia, hobbies, reflexões e nada com nada.</p>
         {% endif %}
     </article>
 
     <section class="col-2">
-        <article class="internal">
+        <article{% if isPost %} class="internal"{% endif %}>
             {{ content | safe }}
 
-            {% if page.url != '/blog/' and page.url != '/blog' %}
+            {% if isPost %}
             {% set postCategories = categories | normalizarCategorias %}
             {% set postTags = tags | normalizarTags %}
             {% if (postCategories and postCategories.length > 0) or (postTags and postTags.length > 0) %}

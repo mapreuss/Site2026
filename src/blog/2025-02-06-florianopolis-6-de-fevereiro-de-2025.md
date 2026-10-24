@@ -3,7 +3,7 @@ id: 121
 title: 'Florianópolis, 6 de fevereiro de 2025'
 date: '2025-02-06T05:00:45-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Reflexões sob o calor escaldante de Florianópolis sobre a rotina na casa nova e as complexidades de viver os próprios sonhos.'
 guid: 'https://martinha.online/neuroses-cotidianas/2025/02/06/florianopolis-6-de-fevereiro-de-2025/'
 permalink: /2025/02/06/florianopolis-6-de-fevereiro-de-2025/
 bluesky_shared:

@@ -3,7 +3,7 @@ id: 257
 title: 'Os cuspes que caem na nossa testa'
 date: '2025-07-13T21:56:07-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Como a maternidade real desmontou todas as minhas certezas teóricas sobre parto, amamentação, sono infantil e rotina familiar.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=257'
 permalink: /2025/07/13/os-cuspes-que-caem-na-nossa-testa/
 bluesky_shared:

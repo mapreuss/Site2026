@@ -3,7 +3,7 @@ id: 242
 title: 'Limpeza geral nos salões nasais'
 date: '2025-05-27T14:03:34-03:00'
 author: marta
-excerpt: ''
+excerpt: 'O relato detalhado da minha cirurgia no nariz, desde o alívio imediato na respiração até os primeiros dias de recuperação.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=242'
 permalink: /2025/05/27/limpeza-geral-nos-saloes-nasais/
 enclosure:

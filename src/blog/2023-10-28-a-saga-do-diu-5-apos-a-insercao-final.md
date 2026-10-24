@@ -3,7 +3,7 @@ id: 108
 title: '[A saga do DIU] 5: Após a inserção (final)'
 date: '2023-10-28T13:36:03-03:00'
 author: marta
-excerpt: ''
+excerpt: 'O desfecho da saga do DIU, abordando a recuperação dos primeiros dias, os exames de acompanhamento e a tranquilidade final.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/10/28/a-saga-do-diu-5-apos-a-insercao-final/'
 permalink: /2023/10/28/a-saga-do-diu-5-apos-a-insercao-final/
 image: /wp-content/uploads/2025/03/ntybbu66_si-363x188.jpg

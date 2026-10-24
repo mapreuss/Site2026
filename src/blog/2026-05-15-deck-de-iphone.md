@@ -3,7 +3,7 @@ id: 417
 title: 'Deck de iPhone'
 date: '2026-05-15T16:34:16-03:00'
 author: marta
-excerpt: ''
+excerpt: 'A crônica de quase trinta horas de impressão 3D para criar uma doca sob medida para o modo de espera do iPhone.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=417'
 permalink: /2026/05/15/deck-de-iphone/
 bluesky_shared:

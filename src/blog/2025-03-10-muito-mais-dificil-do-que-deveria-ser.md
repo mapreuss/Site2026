@@ -3,7 +3,7 @@ id: 213
 title: 'Muito mais difícil do que deveria ser'
 date: '2025-03-10T17:18:52-03:00'
 author: marta
-excerpt: ''
+excerpt: 'As dificuldades e perrengues inesperados ao tentar configurar um blog no WordPress moderno e a reflexão sobre acessibilidade no open source.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=213'
 permalink: /2025/03/10/muito-mais-dificil-do-que-deveria-ser/
 image: /wp-content/uploads/2025/03/nwiexscqxdm-363x188.jpg

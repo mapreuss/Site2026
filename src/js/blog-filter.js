@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         chapeuEl.textContent = isTag ? "Tag" : "Categoria";
       }
       if (descEl) {
-        const rotulo = isTag ? `com a tag <strong>${valorTrim}</strong>` : `em <strong>${valorTrim}</strong>`;
+        const rotulo = isTag ? `com a tag ${valorTrim}` : `em ${valorTrim}`;
         descEl.innerHTML = `Mostrando ${visiveis} ${visiveis === 1 ? "post" : "posts"} ${rotulo}. <a href="/blog/" class="limpar-filtro">Ver todos os posts</a>`;
       }
       document.title = `${valorTrim} | Blog`;

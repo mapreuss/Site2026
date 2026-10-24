@@ -3,7 +3,7 @@ id: 118
 title: 'Como desenvolvi e matei minha persona profissional'
 date: '2024-10-09T13:59:05-03:00'
 author: marta
-excerpt: ''
+excerpt: 'A transição da persona acolhedora de Martinha para assumir meu espaço e autoridade como Marta no ambiente profissional.'
 guid: 'https://martinha.online/neuroses-cotidianas/2024/10/09/como-desenvolvi-e-matei-minha-persona-profissional/'
 permalink: /2024/10/09/como-desenvolvi-e-matei-minha-persona-profissional/
 bluesky_shared:

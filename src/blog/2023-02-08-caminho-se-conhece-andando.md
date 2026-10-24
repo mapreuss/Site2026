@@ -3,7 +3,7 @@ id: 119
 title: 'caminho se conhece andando'
 date: '2023-02-08T11:07:52-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Sobre desapegar da necessidade de manuais e validações externas para descobrir a própria identidade na prática do dia a dia.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/02/08/caminho-se-conhece-andando/'
 permalink: /2023/02/08/caminho-se-conhece-andando/
 image: /wp-content/uploads/2025/03/u0vgcioqg08-363x188.jpg

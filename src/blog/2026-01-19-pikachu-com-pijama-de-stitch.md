@@ -3,7 +3,7 @@ id: 324
 title: 'Pikachu com pijama de Stitch'
 date: '2026-01-19T14:14:56-03:00'
 author: marta
-excerpt: ''
+excerpt: 'A estreia da categoria de hobbies no blog com o relato de impressão 3D e pintura de uma miniatura de Pikachu com pijama de Stitch.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=324'
 permalink: /2026/01/19/pikachu-com-pijama-de-stitch/
 bluesky_shared:

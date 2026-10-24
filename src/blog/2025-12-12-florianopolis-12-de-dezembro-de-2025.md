@@ -3,7 +3,7 @@ id: 283
 title: 'Florianópolis, 12 de dezembro de 2025'
 date: '2025-12-12T15:43:33-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Uma volta ao blog após meses de silêncio para refletir sobre mudanças de emprego, esgotamento e a maturidade de impor limites firmes.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=283'
 permalink: /2025/12/12/florianopolis-12-de-dezembro-de-2025/
 bluesky_shared:

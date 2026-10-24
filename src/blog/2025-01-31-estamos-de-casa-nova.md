@@ -3,7 +3,7 @@ id: 104
 title: 'Estamos de casa nova'
 date: '2025-01-31T12:08:38-03:00'
 author: marta
-excerpt: ''
+excerpt: 'A saída do Substack por motivos éticos e o processo de migração do blog para uma hospedagem própria e independente com HTMLy.'
 guid: 'https://martinha.online/neuroses-cotidianas/2025/01/31/estamos-de-casa-nova/'
 permalink: /2025/01/31/estamos-de-casa-nova/
 image: /wp-content/uploads/2025/03/rxh2btisofm-363x188.jpg

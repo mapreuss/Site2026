@@ -3,7 +3,7 @@ id: 115
 title: 'Well, well, look who is inside again'
 date: '2024-07-06T07:42:44-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Um desabafo honesto sobre as recaídas da depressão e o peso esmagador das cobranças para se manter funcional e produtiva o tempo todo.'
 guid: 'https://martinha.online/neuroses-cotidianas/2024/07/06/well-well-look-who-is-inside-again/'
 permalink: /2024/07/06/well-well-look-who-is-inside-again/
 image: /wp-content/uploads/2025/03/uuggxubfyic-363x188.jpg

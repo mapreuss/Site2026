@@ -105,9 +105,6 @@ section.col-2 article{
 .widget ul{
   padding: 0.5rem 0.75rem;
 }
-.widget li{
-  margin: 0 0 1rem 0;
-}
 .widget a{
   text-decoration: none;
   font-size: 0.875rem;
@@ -138,6 +135,7 @@ p {
 
 p em {
   font-family: var(--fonte-titulo);
+  font-size: 1.2em;
 }
 
 .chapeu {
@@ -331,6 +329,10 @@ h3 {
 .tags li:has(a.active) a,
 .tags li:has(a.active) span {
   color: #ffffff;
+}
+
+.widget-categorias span{
+  font-size: 0.875rem;
 }
 
 /* ---- HEADER ---- */
@@ -915,6 +917,13 @@ footer p {
   margin-top: 2rem;
 }
 
+#blog-cards{
+  display: block;
+}
+#blog-cards li{
+  margin-bottom: 2em;
+}
+
 @media (max-width: 1023px) {
   #splash aside{
     display: none;
@@ -1031,3 +1040,4 @@ footer p {
     font-size: 2rem;
   }
 }
+

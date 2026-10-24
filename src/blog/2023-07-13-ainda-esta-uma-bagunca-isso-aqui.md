@@ -3,7 +3,7 @@ id: 120
 title: 'Ainda está uma bagunça, isso aqui'
 date: '2023-07-13T11:10:06-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Uma escrita sem regras sobre o retorno ao blog, o vício em validação digital e a conquista do próprio espaço através de limites.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/07/13/ainda-esta-uma-bagunca-isso-aqui/'
 permalink: /2023/07/13/ainda-esta-uma-bagunca-isso-aqui/
 image: /wp-content/uploads/2025/03/oqj0chxpzoi-363x188.jpg

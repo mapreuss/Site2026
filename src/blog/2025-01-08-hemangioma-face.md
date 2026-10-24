@@ -3,7 +3,7 @@ id: 112
 title: Hemangioma-face
 date: '2025-01-08T14:02:32-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Um desabafo sobre representatividade e a indignação ao ver um hemangioma ser pintado de forma caricata em vídeos da internet.'
 guid: 'https://martinha.online/neuroses-cotidianas/2025/01/08/hemangioma-face/'
 permalink: /2025/01/08/hemangioma-face/
 image: /wp-content/uploads/2025/01/Hemangioma-Face-Jan-30-2025-363x188.jpg

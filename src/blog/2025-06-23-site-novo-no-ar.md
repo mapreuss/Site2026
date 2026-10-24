@@ -3,7 +3,7 @@ id: 263
 title: 'Site novo no ar'
 date: '2025-06-23T09:45:33-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Os bastidores de como usei ferramentas de inteligência artificial e vibe coding para reconstruir meu site pessoal e automatizar o deploy.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=263'
 permalink: /2025/06/23/site-novo-no-ar/
 image: /wp-content/uploads/2025/06/Screenshot-2025-06-23-at-09.32.15-363x188.png

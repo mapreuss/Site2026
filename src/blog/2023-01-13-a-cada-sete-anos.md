@@ -3,7 +3,7 @@ id: 126
 title: 'a cada sete anos&#8230;'
 date: '2023-01-13T11:01:30-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Reflexões sobre a renovação das células, a desordem dolorosa da psicanálise e o processo de tentar se reencontrar aos 35 anos.'
 guid: 'https://martinha.online/neuroses-cotidianas/2023/01/13/a-cada-sete-anos/'
 permalink: /2023/01/13/a-cada-sete-anos/
 image: /wp-content/uploads/2025/03/ebivdbb83y0-363x188.jpg

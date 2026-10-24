@@ -3,7 +3,7 @@ id: 106
 title: 'E a cultura de Produto no Brasil hein?'
 date: '2024-07-25T13:53:38-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Uma visão crítica sobre as particularidades do mercado de tecnologia no Brasil e por que modismos gringos de Produto nem sempre cabem na nossa realidade.'
 guid: 'https://martinha.online/neuroses-cotidianas/2024/07/25/e-a-cultura-de-produto-no-brasil-hein/'
 permalink: /2024/07/25/e-a-cultura-de-produto-no-brasil-hein/
 image: /wp-content/uploads/2025/03/5fnmwej4taa-363x188.jpg

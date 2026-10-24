@@ -3,7 +3,7 @@ id: 295
 title: 'São Paulo, 26 de dezembro de 2025'
 date: '2025-12-29T16:15:57-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Um olhar nostálgico e atento sobre a arquitetura e os detalhes cotidianos de São Paulo dez anos após deixar a cidade.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=295'
 permalink: /2025/12/29/sao-paulo-26-de-dezembro-de-2025/
 bluesky_shared:

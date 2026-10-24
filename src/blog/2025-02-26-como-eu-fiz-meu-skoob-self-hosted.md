@@ -3,7 +3,7 @@ id: 105
 title: 'Como eu fiz meu Skoob self-hosted'
 date: '2025-02-26T11:58:09-03:00'
 author: marta
-excerpt: ''
+excerpt: 'O passo a passo de como extraí meus dados do Skoob e criei uma plataforma própria de livros lidos usando Google Sheets e Softr.'
 guid: 'https://martinha.online/neuroses-cotidianas/2025/02/26/como-eu-fiz-meu-skoob-self-hosted/'
 permalink: /2025/02/26/como-eu-fiz-meu-skoob-self-hosted/
 image: /wp-content/uploads/2025/03/3tocmh5my0q-e1741114068170.jpg

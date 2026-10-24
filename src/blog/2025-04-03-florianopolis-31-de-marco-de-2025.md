@@ -3,7 +3,7 @@ id: 227
 title: 'Florianópolis, 31 de março de 2025'
 date: '2025-04-03T14:05:44-03:00'
 author: marta
-excerpt: ''
+excerpt: 'Uma pausa na rotina para compartilhar impressões sobre leituras, séries e as melhorias que aos poucos transformam a casa nova.'
 guid: 'https://martinha.online/neuroses-cotidianas/?p=227'
 permalink: /2025/04/03/florianopolis-31-de-marco-de-2025/
 image: /wp-content/uploads/2025/04/IMG-3460-from-Google-Photos-scaled-e1743699928621-363x188.jpg
