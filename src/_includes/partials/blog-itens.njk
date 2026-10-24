@@ -1,7 +1,7 @@
 <ul class="cards" id="blog-cards">
 {% for item in collections.blog reversed %}
   {% if page.url != '/' or forloop.index <= 3 %}
-  <li class="blog-card" data-categories="{{ item.data.categories | categoriaListaParaData }}">
+  <li class="blog-card" data-categories="{{ item.data.categories | categoriaListaParaData }}" data-tags="{{ item.data.tags | tagListaParaData }}">
     <article>
       <p class="header">
         <span>{{ item.data.date }}</span>
@@ -15,7 +15,11 @@
       <ul class="tags">
        {% assign postCategories = item.data.categories | normalizarCategorias %}
        {% for category in postCategories %}
-          <li><a href="/blog/?categoria={{ category | url_encode }}">{{ category }}</a></li>
+          <li><a href="/blog/?categoria={{ category | url_encode }}" class="cat-link" data-category="{{ category }}">{{ category }}</a></li>
+        {% endfor %}
+       {% assign postTags = item.data.tags | normalizarTags %}
+       {% for tag in postTags %}
+          <li><a href="/blog/?tag={{ tag | url_encode }}" class="tag-link" data-tag="{{ tag }}">{{ tag }}</a></li>
         {% endfor %}
       </ul>
     </aside>

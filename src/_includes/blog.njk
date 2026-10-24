@@ -12,13 +12,28 @@ layout: base.njk
     <section class="col-2">
         <article class="internal">
             {{ content | safe }}
+
+            {% if page.url != '/blog/' and page.url != '/blog' %}
+            {% set postCategories = categories | normalizarCategorias %}
+            {% set postTags = tags | normalizarTags %}
+            {% if (postCategories and postCategories.length > 0) or (postTags and postTags.length > 0) %}
+            <ul class="tags post-meta-tags" style="margin-top: 2rem;">
+                {% for category in postCategories %}
+                <li><a href="/blog/?categoria={{ category | urlencode }}" class="cat-link" data-category="{{ category }}">{{ category }}</a></li>
+                {% endfor %}
+                {% for tag in postTags %}
+                <li><a href="/blog/?tag={{ tag | urlencode }}" class="tag-link" data-tag="{{ tag }}">{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endif %}
         </article>
 
         <aside>
             <article class="widget">
                 <p class="chapeu"><small>Últimos posts</small></p>
                 <ul>
-                    {% for item in collections.blog | sortBy("fileSlug") | reverse %}
+                    {% for item in collections.blog | reverse | limit(5) %}
                     <li>
                         <a href="{{ item.url }}">{{ item.data.title }}</a>
                     </li>
@@ -39,12 +54,12 @@ layout: base.njk
             </article>        
             <article class="widget">
                 <p class="chapeu"><small>Tags</small></p>
-                    <ul class="tags">
-                    {% set tags = collections.blog | tagsComContagem %}
+                <ul class="tags widget-tags">
+                    {% set listaTags = collections.blog | tagsComContagem %}
                     
-                    {% for tag in tags %}
+                    {% for tag in listaTags %}
                         <li>
-                        {{ tag.nome }} <span class="tag-count">({{ tag.quantidade }})</span>
+                            <a href="/blog/?tag={{ tag.nome | urlencode }}" class="tag-link" data-tag="{{ tag.nome }}">{{ tag.nome }}</a> <span class="tag-count">({{ tag.quantidade }})</span>
                         </li>
                     {% endfor %}
                 </ul>

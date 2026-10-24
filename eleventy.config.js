@@ -19,15 +19,20 @@ export default function (eleventyConfig) {
 
   // Adiciona o filtro customizado
   eleventyConfig.addFilter("tagsComContagem", function(colecao) {
+    if (!colecao || !Array.isArray(colecao)) return [];
     let contagemTags = {};
 
     colecao.forEach(item => {
       // Pega as tags do post, se não houver, usa um array vazio
-      let tags = item.data.tags || [];
+      let tags = item.data?.tags || [];
+      if (typeof tags === "string") {
+        tags = [tags];
+      }
+      if (!Array.isArray(tags)) tags = [];
 
       tags.forEach(tag => {
-        // Ignora a tag "portfolio" se ela for a tag que cria a coleção
-        if (tag !== "portfolio" && tag !== "post") {
+        // Ignora tags de sistema/coleção
+        if (tag && tag !== "portfolio" && tag !== "post" && tag !== "blog") {
           if (!contagemTags[tag]) {
             contagemTags[tag] = 0;
           }
@@ -47,6 +52,29 @@ export default function (eleventyConfig) {
 
     // Ordena as tags em ordem alfabética
     return listaTags.sort((a, b) => a.nome.localeCompare(b.nome));
+  });
+
+  eleventyConfig.addFilter("normalizarTags", function(tags) {
+    if (!tags) return [];
+    if (typeof tags === "string") tags = [tags];
+    if (Array.isArray(tags)) {
+      return tags.filter(t => Boolean(t) && t !== "portfolio" && t !== "post" && t !== "blog");
+    }
+    return [];
+  });
+
+  eleventyConfig.addFilter("tagListaParaData", function(tags) {
+    if (!tags) return "";
+    let lista = [];
+    if (typeof tags === "string") {
+      lista = [tags];
+    } else if (Array.isArray(tags)) {
+      lista = tags;
+    }
+    return lista
+      .filter(t => Boolean(t) && t !== "portfolio" && t !== "post" && t !== "blog")
+      .map(t => String(t).trim().toLowerCase())
+      .join("|");
   });
 
   eleventyConfig.addFilter("categoriasComContagem", function(colecao) {
