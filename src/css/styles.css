@@ -113,6 +113,21 @@ section.col-2 article{
   font-size: 0.875rem;
   color: var(--cor-texto-secundario5);
 }
+.widget a:hover,
+.widget a.active {
+  color: var(--cor-destaque-secundario);
+  text-decoration: underline;
+}
+.widget a.active {
+  font-weight: 600;
+}
+.limpar-filtro {
+  color: var(--cor-destaque-secundario);
+  text-decoration: underline;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
 p {
   margin: 0;
   padding: 0;
@@ -294,6 +309,13 @@ h3 {
   border: 1px solid var(--cor-destaque-secundario);
   border-radius: 0.125rem;
   background-color: var(--cor-fundo-icone-email);
+}
+.tags li a {
+  color: inherit;
+  text-decoration: none;
+}
+.tags li a:hover {
+  text-decoration: underline;
 }
 
 /* ---- HEADER ---- */

@@ -49,6 +49,62 @@ export default function (eleventyConfig) {
     return listaTags.sort((a, b) => a.nome.localeCompare(b.nome));
   });
 
+  eleventyConfig.addFilter("categoriasComContagem", function(colecao) {
+    if (!colecao || !Array.isArray(colecao)) return [];
+    let contagemCategoria = {};
+
+    colecao.forEach(item => {
+      // Pega as categorias do post, se não houver, usa um array vazio
+      let categories = item.data?.categories || [];
+      if (typeof categories === "string") {
+        categories = [categories];
+      }
+
+      categories.forEach(categoria => {
+        // Ignora a categoria se ela for nula ou as tags do sistema
+        if (categoria && categoria !== "portfolio" && categoria !== "post") {
+          if (!contagemCategoria[categoria]) {
+            contagemCategoria[categoria] = 0;
+          }
+          contagemCategoria[categoria]++;
+        }
+      });
+    });
+
+    // Converte o objeto em um array para facilitar o uso no template (HTML)
+    let listaCategorias = [];
+    for (let categoria in contagemCategoria) {
+      listaCategorias.push({ 
+        nome: categoria, 
+        quantidade: contagemCategoria[categoria] 
+      });
+    }
+
+    // Ordena as categorias em ordem alfabética
+    return listaCategorias.sort((a, b) => a.nome.localeCompare(b.nome));
+  });
+
+  eleventyConfig.addFilter("normalizarCategorias", function(categories) {
+    if (!categories) return [];
+    if (typeof categories === "string") return [categories];
+    if (Array.isArray(categories)) return categories.filter(Boolean);
+    return [];
+  });
+
+  eleventyConfig.addFilter("categoriaListaParaData", function(categories) {
+    if (!categories) return "";
+    let lista = [];
+    if (typeof categories === "string") {
+      lista = [categories];
+    } else if (Array.isArray(categories)) {
+      lista = categories;
+    }
+    return lista
+      .filter(Boolean)
+      .map(c => String(c).trim().toLowerCase())
+      .join("|");
+  });
+
   eleventyConfig.addFilter("filtrarTagsItem", function(tags) {
   if (!tags) return [];
     // Remove a tag "portfolio" e pega apenas as 3 primeiras restantes

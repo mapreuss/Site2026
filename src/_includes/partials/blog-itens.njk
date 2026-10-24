@@ -1,20 +1,21 @@
-<ul class="cards">
+<ul class="cards" id="blog-cards">
 {% for item in collections.blog reversed %}
   {% if page.url != '/' or forloop.index <= 3 %}
-  <li>
+  <li class="blog-card" data-categories="{{ item.data.categories | categoriaListaParaData }}">
     <article>
       <p class="header">
-        <span>{{ item.data.data }}</span>
+        <span>{{ item.data.date }}</span>
         <a href="{{ item.url }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
       </p>
       <h3>{{ item.data.title }}</h3>
-      <p>{{ item.data.resumo }}</p>
+      <p>{{ item.data.excerpt }}</p>
     </article>
     <aside>
 
       <ul class="tags">
-       {% for tag in item.data.tags offset: 1 limit: 3 %}
-          <li>{{ tag }}</li>
+       {% assign postCategories = item.data.categories | normalizarCategorias %}
+       {% for category in postCategories %}
+          <li><a href="/blog/?categoria={{ category | url_encode }}">{{ category }}</a></li>
         {% endfor %}
       </ul>
     </aside>
@@ -22,3 +23,7 @@
   {% endif %}
 {% endfor %}
 </ul>
+<div id="blog-empty-state" style="display: none; padding: 2rem 0;">
+  <p>Nenhum post encontrado nesta categoria.</p>
+  <p><a href="/blog/" class="btn-opposite limpar-filtro">Ver todos os posts</a></p>
+</div>

@@ -3,10 +3,10 @@ layout: base.njk
 ---
 
 <section id="portfolio-page">
-    <article>
-        <p class="chapeu"><small>Blog</small></p>
-        <h2>Blog</h2>
-        <p>Dia a dia, hobbies, reflexões e nada com nada.</p>
+    <article class="page-title-section">
+        <p class="chapeu"><small id="blog-chapeu">Blog</small></p>
+        <h2 id="blog-title">Blog</h2>
+        <p id="blog-description">Dia a dia, hobbies, reflexões e nada com nada.</p>
     </article>
 
     <section class="col-2">
@@ -27,21 +27,25 @@ layout: base.njk
             </article>
             <article class="widget">
                 <p class="chapeu"><small>Categorias</small></p>
-                <ul>
-                    {% for item in collections.blog | sortBy("fileSlug") | reverse %}
-                    <li>
-                        <a href="{{ item.url }}">{{ item.data.title }}</a>
-                    </li>
+                <ul class="widget-categorias">
+                    {% set categorias = collections.blog | categoriasComContagem %}
+                    
+                    {% for category in categorias %}
+                        <li>
+                            <a href="/blog/?categoria={{ category.nome | urlencode }}" class="cat-link" data-category="{{ category.nome }}">{{ category.nome }}</a> <span class="tag-count">({{ category.quantidade }})</span>
+                        </li>
                     {% endfor %}
                 </ul>
             </article>        
             <article class="widget">
                 <p class="chapeu"><small>Tags</small></p>
-                <ul>
-                    {% for item in collections.blog | sortBy("fileSlug") | reverse %}
-                    <li>
-                        <a href="{{ item.url }}">{{ item.data.title }}</a>
-                    </li>
+                    <ul class="tags">
+                    {% set tags = collections.blog | tagsComContagem %}
+                    
+                    {% for tag in tags %}
+                        <li>
+                        {{ tag.nome }} <span class="tag-count">({{ tag.quantidade }})</span>
+                        </li>
                     {% endfor %}
                 </ul>
             </article>                
@@ -49,3 +53,4 @@ layout: base.njk
     </section>
 
 </section>
+<script src="/js/blog-filter.js" defer></script>
