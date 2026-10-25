@@ -64,21 +64,13 @@ format: false
 <p>Eu alinhei a expectativa com o moço que me atendeu dizendo que não sabia se ia comprar, e ele comigo dizendo que não era um vendedor qualificado, estava cobrindo um colega. Tudo bem. Expliquei meu caso e ele me mostrou os modelos de 350 e 500 watts, os de entrada. A criança e eu sentamos e experimentamos. Quando ele falou que podia fazer teste drive, meus olhinhos brilharam.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=dVBzdGQJWWk","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=dVBzdGQJWWk
-</div></figure>
-<!-- /wp:embed -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dVBzdGQJWWk?si=jOXD3LSOad9HPF2h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!-- wp:paragraph -->
 <p>Dei umas voltinhas sozinha primeiro, depois com o menino. A moto parece um patinete com acento, na verdade. Diferente da bicicleta, apesar de ter pedal para ajudar, ela acelera na mão direita, como uma moto convencional. Ela tem farol dianteiro e traseiro, setas, buzina, 3 níveis de velocidade (chamei de marchas), pé para apoio, cestinha e alarme. Carrega em uma tomada convencional, e cada carga custa aproximadamente R$1. Isso, um real. A autonomia é de uns 45km, então eu posso carregar uma vez por semana tranquilamente com meu uso normal.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Eg-NMQhJrv4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://www.youtube.com/watch?v=Eg-NMQhJrv4
-</div></figure>
-<!-- /wp:embed -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Eg-NMQhJrv4?si=9LAWWeUBgfASgDbS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!-- wp:paragraph -->
 <p>Quando testei e o menino também pareceu gostar, não tinha mais volta. Eu queria tanto. Perguntei de valores. Ela foi quase R$8 mil. Dava para fazer em 18x, mas meu cartão só passou 12. </p>

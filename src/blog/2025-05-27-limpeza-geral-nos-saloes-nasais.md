@@ -47,7 +47,12 @@ format: false
 <!-- /wp:paragraph -->
 
 <!-- wp:html -->
-<figure class="wp-block-video aligncenter" style="max-width: 300px"><video controls src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/05/v09044g40000cthmlk7og65m0gcvtmeg.mp4"></video></figure>
+<figure>
+    <video controls width="250" height="450">
+        <source src="https://martinha.online/neuroses-cotidianas/wp-content/uploads/2025/05/v09044g40000cthmlk7og65m0gcvtmeg.mp4" type="video/mp4" />
+    </video>
+</figure>
+
 <!-- /wp:html -->
 
 <!-- wp:paragraph -->
@@ -58,11 +63,7 @@ format: false
 <p>Eu estava apavorada, mas sabia que precisava fazer e topei. Esse vídeo me ajudou bastante a tomar a decisão. Não é do meu médico, mas é bem claro.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:embed {"url":"https://youtu.be/-CmrcdxhVyU?si=INIDTXIvUbrgLX4b","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://youtu.be/-CmrcdxhVyU?si=INIDTXIvUbrgLX4b
-</div></figure>
-<!-- /wp:embed -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-CmrcdxhVyU?si=4RsNgZfUzIV0nHmV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <!-- wp:paragraph -->
 <p>Fiz os exames pré-operatórios, marquei uma consulta pré-anestésica e esperei. Foi tudo pelo convênio, só paguei a instrumentadora. Foi em um ótimo hospital aqui na cidade. </p>

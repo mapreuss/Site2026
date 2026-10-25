@@ -20,10 +20,6 @@ format: false
 <p>Mas eu nasci com uma mancha de nascença no rosto e no corpo todo. Eu achei que isso ia me impedir de atuar. Que eu até poderia atuar no teatro por exemplo, mas que nunca seria contratada pra TV (mal sabia eu que eu estava diminuindo a coisa errada, mas eu era uma criança dos anos 90, não sabia nada da vida). Até o tratamento a laser no rosto eu fiz com a esperança da mancha sair e eu poder ser atriz, igual minha prima.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><img src="https://martinha.online/blog/content/images/20250130170329-Hemangioma%20Face%20by%20Martinha.jpg" alt="enter image description here"> </p>
-<!-- /wp:paragraph -->
-
 <!-- wp:paragraph -->
 <p><em>No Ensino Médio entrei para o clube de teatro da minha escola católica. Eu era a mais velha. Peguei o papel principal. Não tiraram nenhuma foto de frente da minha performance. Eu tinha certeza que era porque eu tinha a mancha. Mas se fosse um problema tão grande assim, será que ninguém ia sugerir uma base? Hoje já acho que era só um ângulo para pegar o “palco” todo.</em></p>
 <!-- /wp:paragraph -->
