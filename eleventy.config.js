@@ -153,6 +153,51 @@ export default function (eleventyConfig) {
     return tags.filter(tag => tag !== "portfolio").slice(0, 3);
   });
 
+  // === ARQUIVO: agrupa posts por ano e mês ===
+  eleventyConfig.addFilter("arquivoPorAnoMes", function(colecao) {
+    if (!colecao || !Array.isArray(colecao)) return [];
+
+    const meses = [
+      "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+      "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+
+    const grupos = {};
+
+    colecao.forEach(item => {
+      const rawDate = item.data?.date;
+      if (!rawDate) return;
+      const d = rawDate instanceof Date ? rawDate : new Date(rawDate);
+      if (isNaN(d.getTime())) return;
+
+      const ano = d.getFullYear();
+      const mesIdx = d.getMonth(); // 0-11
+      const chave = `${ano}-${String(mesIdx + 1).padStart(2, "0")}`;
+
+      if (!grupos[chave]) {
+        grupos[chave] = {
+          chave,
+          ano,
+          mes: meses[mesIdx],
+          mesNum: mesIdx + 1,
+          quantidade: 0
+        };
+      }
+      grupos[chave].quantidade++;
+    });
+
+    // Ordena do mais recente para o mais antigo
+    return Object.values(grupos).sort((a, b) => b.chave.localeCompare(a.chave));
+  });
+
+  // Formata data como "YYYY-MM" para uso no data-attribute dos cards
+  eleventyConfig.addFilter("anoMesParaData", function(dateInput) {
+    if (!dateInput) return "";
+    const d = dateInput instanceof Date ? dateInput : new Date(dateInput);
+    if (isNaN(d.getTime())) return "";
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+  });
+
   // === FILTROS PARA RSS ===
 
   // Formata data no padrão RFC 822 para o feed RSS

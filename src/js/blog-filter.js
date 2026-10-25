@@ -63,8 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const cards = Array.from(document.querySelectorAll(".blog-card"));
     const categoryLinks = document.querySelectorAll(".cat-link");
     const tagLinks = document.querySelectorAll(".tag-link");
+    const arquivoLinks = document.querySelectorAll(".arquivo-link");
 
-    const isValido = (tipo === "categoria" || tipo === "tag") && valor && valor.trim() !== "";
+    const isValido = (tipo === "categoria" || tipo === "tag" || tipo === "arquivo") && valor && valor.trim() !== "";
 
     paginaAtual = 1; // sempre volta à primeira página ao filtrar
 
@@ -73,6 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const normAlvo = normalizar(valorTrim);
       const isCategoria = tipo === "categoria";
       const isTag = tipo === "tag";
+      const isArquivo = tipo === "arquivo";
 
       // Filtra quais cards passam
       cardsVisiveis = cards.filter((card) => {
@@ -82,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (isTag) {
           const rawTags = card.getAttribute("data-tags") || "";
           return rawTags.split("|").map(normalizar).includes(normAlvo);
+        } else if (isArquivo) {
+          const cardArchive = card.getAttribute("data-archive") || "";
+          return cardArchive === valorTrim;
         }
         return false;
       });
@@ -91,24 +96,34 @@ document.addEventListener("DOMContentLoaded", () => {
       if (emptyState) {
         const emptyMsg = emptyState.querySelector("p");
         if (emptyMsg) {
-          emptyMsg.textContent = isTag
-            ? `Nenhum post encontrado com a tag "${valorTrim}".`
-            : `Nenhum post encontrado nesta categoria.`;
+          if (isTag) emptyMsg.textContent = `Nenhum post encontrado com a tag "${valorTrim}".`;
+          else if (isArquivo) emptyMsg.textContent = `Nenhum post encontrado neste período.`;
+          else emptyMsg.textContent = `Nenhum post encontrado nesta categoria.`;
         }
         emptyState.style.display = cardsVisiveis.length === 0 ? "block" : "none";
       }
 
-      // Atualiza o título e cabeçalho
-      if (titleEl) titleEl.textContent = valorTrim;
-      const extraTitles = document.querySelectorAll("#trabalhos > article h2");
-      extraTitles.forEach((el) => (el.textContent = valorTrim));
+      // Monta rótulo de exibição para arquivo (ex: "Janeiro 2025")
+      let rotuloExibicao = valorTrim;
+      if (isArquivo) {
+        const link = document.querySelector(`.arquivo-link[data-archive="${valorTrim}"]`);
+        if (link) rotuloExibicao = link.textContent.trim();
+      }
 
-      if (chapeuEl) chapeuEl.textContent = isTag ? "Tag" : "Categoria";
+      // Atualiza o título e cabeçalho
+      if (titleEl) titleEl.textContent = rotuloExibicao;
+      const extraTitles = document.querySelectorAll("#trabalhos > article h2");
+      extraTitles.forEach((el) => (el.textContent = rotuloExibicao));
+
+      if (chapeuEl) chapeuEl.textContent = isTag ? "Tag" : isArquivo ? "Arquivo" : "Categoria";
       if (descEl) {
-        const rotulo = isTag ? `com a tag ${valorTrim}` : `em ${valorTrim}`;
+        let rotulo;
+        if (isTag) rotulo = `com a tag ${rotuloExibicao}`;
+        else if (isArquivo) rotulo = `em ${rotuloExibicao}`;
+        else rotulo = `em ${rotuloExibicao}`;
         descEl.innerHTML = `Mostrando ${cardsVisiveis.length} ${cardsVisiveis.length === 1 ? "post" : "posts"} ${rotulo}. <a href="/blog/" class="limpar-filtro">Ver todos os posts</a>`;
       }
-      document.title = `${valorTrim} | Blog`;
+      document.title = `${rotuloExibicao} | Blog`;
 
       // Destaca os links ativos
       categoryLinks.forEach((link) => {
@@ -135,15 +150,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+      arquivoLinks.forEach((link) => {
+        if (isArquivo) {
+          const match = (link.getAttribute("data-archive") || "") === valorTrim;
+          link.classList.toggle("active", match);
+          link.closest("li")?.classList.toggle("active", match);
+        } else {
+          link.classList.remove("active");
+          link.closest("li")?.classList.remove("active");
+        }
+      });
+
       if (atualizaHistorico) {
         const url = new URL(window.location);
-        if (isCategoria) {
-          url.searchParams.set("categoria", valorTrim);
-          url.searchParams.delete("tag");
-        } else {
-          url.searchParams.set("tag", valorTrim);
-          url.searchParams.delete("categoria");
-        }
+        url.searchParams.delete("categoria");
+        url.searchParams.delete("tag");
+        url.searchParams.delete("arquivo");
+        if (isCategoria) url.searchParams.set("categoria", valorTrim);
+        else if (isTag) url.searchParams.set("tag", valorTrim);
+        else if (isArquivo) url.searchParams.set("arquivo", valorTrim);
         window.history.pushState({ tipo, valor: valorTrim }, "", url);
       }
     } else {
@@ -174,11 +199,16 @@ document.addEventListener("DOMContentLoaded", () => {
         link.classList.remove("active");
         link.closest("li")?.classList.remove("active");
       });
+      arquivoLinks.forEach((link) => {
+        link.classList.remove("active");
+        link.closest("li")?.classList.remove("active");
+      });
 
       if (atualizaHistorico) {
         const url = new URL(window.location);
         url.searchParams.delete("categoria");
         url.searchParams.delete("tag");
+        url.searchParams.delete("arquivo");
         window.history.pushState({}, "", url.pathname);
       }
     }
@@ -236,6 +266,17 @@ document.addEventListener("DOMContentLoaded", () => {
       cardsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
+
+    const arquivoLink = e.target.closest('a[href*="arquivo="]');
+    if (arquivoLink && window.location.pathname.includes("/blog")) {
+      e.preventDefault();
+      const href = arquivoLink.getAttribute("href");
+      const url = new URL(href, window.location.origin);
+      const arquivo = url.searchParams.get("arquivo");
+      aplicarFiltro("arquivo", arquivo, true);
+      cardsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
   });
 
   // Tratar navegação do histórico (botões Voltar/Avançar do navegador)
@@ -243,10 +284,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     const cat = params.get("categoria");
     const tag = params.get("tag");
+    const arquivo = params.get("arquivo");
     if (cat) {
       aplicarFiltro("categoria", cat, false);
     } else if (tag) {
       aplicarFiltro("tag", tag, false);
+    } else if (arquivo) {
+      aplicarFiltro("arquivo", arquivo, false);
     } else {
       aplicarFiltro(null, null, false);
     }
@@ -256,10 +300,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const catInicial = params.get("categoria");
   const tagInicial = params.get("tag");
+  const arquivoInicial = params.get("arquivo");
   if (catInicial) {
     aplicarFiltro("categoria", catInicial, false);
   } else if (tagInicial) {
     aplicarFiltro("tag", tagInicial, false);
+  } else if (arquivoInicial) {
+    aplicarFiltro("arquivo", arquivoInicial, false);
   } else {
     aplicarFiltro(null, null, false);
   }

@@ -346,6 +346,11 @@ h3 {
 .widget .widget-tags li {
   margin: 0;
 }
+/* Número nas tags: mesma cor do texto da tag */
+.widget-tags .tag-count {
+  color: inherit;
+  font-size: inherit;
+}
 .tags li.active,
 .tags li:has(a.active) {
   background-color: var(--cor-destaque-principal);
@@ -361,6 +366,27 @@ h3 {
 
 .widget-categorias span{
   font-size: 0.875rem;
+  color: var(--cor-texto-secundario5);
+  margin-left: auto;
+}
+
+/* === Widget Categorias: lista sem bullets, número à direita === */
+.widget-categorias {
+  list-style: none;
+  padding: 0 !important;
+}
+.widget-categorias li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--cor-borda-padrao);
+}
+.widget-categorias li:last-child {
+  border-bottom: none;
+}
+.widget-categorias li a {
+  flex: 1;
 }
 
 /* ---- HEADER ---- */

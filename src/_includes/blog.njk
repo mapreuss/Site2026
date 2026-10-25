@@ -40,7 +40,7 @@ layout: base.njk
             <article class="widget widget-rss">
                 <p class="chapeu"><small>Feed RSS</small></p>
                 <p class="widget-rss-desc">Acompanhe o blog pelo seu leitor de RSS favorito e não perca nenhum post.</p>
-                <a href="/feed.xml" class="btn-rss" title="Assinar feed RSS do blog">
+                <a href="/feed.xml" target="_blank" class="btn-rss" title="Assinar feed RSS do blog">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M4 11a9 9 0 0 1 9 9"/>
                         <path d="M4 4a16 16 0 0 1 16 16"/>
@@ -66,7 +66,7 @@ layout: base.njk
                     
                     {% for category in categorias %}
                         <li>
-                            <a href="/blog/?categoria={{ category.nome | urlencode }}" class="cat-link" data-category="{{ category.nome }}">{{ category.nome }}</a> <span class="tag-count">({{ category.quantidade }})</span>
+                            <a href="/blog/?categoria={{ category.nome | urlencode }}" class="cat-link" data-category="{{ category.nome }}">{{ category.nome }}</a> <span class="tag-count">{{ category.quantidade }}</span>
                         </li>
                     {% endfor %}
                 </ul>
@@ -78,7 +78,19 @@ layout: base.njk
                     
                     {% for tag in listaTags %}
                         <li>
-                            <a href="/blog/?tag={{ tag.nome | urlencode }}" class="tag-link" data-tag="{{ tag.nome }}">{{ tag.nome }}</a> <span class="tag-count">({{ tag.quantidade }})</span>
+                            <a href="/blog/?tag={{ tag.nome | urlencode }}" class="tag-link" data-tag="{{ tag.nome }}">{{ tag.nome }}</a> <span class="tag-count">{{ tag.quantidade }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </article>
+            <article class="widget">
+                <p class="chapeu"><small>Arquivo</small></p>
+                <ul class="widget-categorias widget-arquivo">
+                    {% set listaArquivo = collections.blog | arquivoPorAnoMes %}
+                    {% for grupo in listaArquivo %}
+                        <li>
+                            <a href="/blog/?arquivo={{ grupo.chave }}" class="arquivo-link" data-archive="{{ grupo.chave }}">{{ grupo.mes }} {{ grupo.ano }}</a>
+                            <span class="tag-count">{{ grupo.quantidade }}</span>
                         </li>
                     {% endfor %}
                 </ul>

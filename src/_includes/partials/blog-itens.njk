@@ -1,7 +1,7 @@
 <ul class="cards" id="blog-cards">
 {% for item in collections.blog reversed %}
   {% if page.url != '/' or forloop.index <= 3 %}
-  <li class="blog-card" data-categories="{{ item.data.categories | categoriaListaParaData }}" data-tags="{{ item.data.tags | tagListaParaData }}">
+  <li class="blog-card" data-categories="{{ item.data.categories | categoriaListaParaData }}" data-tags="{{ item.data.tags | tagListaParaData }}" data-archive="{{ item.data.date | anoMesParaData }}">
     <article>
       <figure>
         <a href="{{ item.url }}"><img src="http://martinha.online/neuroses-cotidianas/{{ item.data.image }}"></a>
