@@ -37,18 +37,6 @@ layout: base.njk
         </article>
 
         <aside>
-            <article class="widget widget-rss">
-                <p class="chapeu"><small>Feed RSS</small></p>
-                <p class="widget-rss-desc">Acompanhe o blog pelo seu leitor de RSS favorito e não perca nenhum post.</p>
-                <a href="/feed.xml" target="_blank" class="btn-rss" title="Assinar feed RSS do blog">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M4 11a9 9 0 0 1 9 9"/>
-                        <path d="M4 4a16 16 0 0 1 16 16"/>
-                        <circle cx="5" cy="19" r="1"/>
-                    </svg>
-                    Assinar RSS
-                </a>
-            </article>
             <article class="widget">
                 <p class="chapeu"><small>Últimos posts</small></p>
                 <ul>
@@ -94,7 +82,19 @@ layout: base.njk
                         </li>
                     {% endfor %}
                 </ul>
-            </article>                
+            </article>         
+            <article class="widget widget-rss">
+                <p class="chapeu"><small>Feed RSS</small></p>
+                <p class="widget-rss-desc">Acompanhe o blog pelo seu leitor de RSS favorito e não perca nenhum post.</p>
+                <a href="/feed.xml" target="_blank" class="btn-rss" title="Assinar feed RSS do blog">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 11a9 9 0 0 1 9 9"/>
+                        <path d="M4 4a16 16 0 0 1 16 16"/>
+                        <circle cx="5" cy="19" r="1"/>
+                    </svg>
+                    Assinar RSS
+                </a>
+            </article>       
         </aside>
     </section>
 
