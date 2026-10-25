@@ -1,0 +1,40 @@
+<ul class="cards" id="blog-cards">
+{% for item in collections.blog reversed %}
+  {% if page.url != '/' or forloop.index <= 3 %}
+  <li class="blog-card" data-categories="{{ item.data.categories | categoriaListaParaData }}" data-tags="{{ item.data.tags | tagListaParaData }}" data-archive="{{ item.data.date | anoMesParaData }}">
+    <article>
+      <figure>
+        <a href="{{ item.url }}"><img src="http://martinha.online/neuroses-cotidianas/{{ item.data.image }}"></a>
+      </figure>
+      <p class="header">
+        <span>{{ item.data.date | formatarDataBR }}</span>
+      </p>
+      <h3><a href="{{ item.url }}">{{ item.data.title }}</a></h3>
+      <p>{{ item.data.excerpt }}</p>
+    </article>
+    <aside>
+
+      <ul class="tags">
+       {% assign postCategories = item.data.categories | normalizarCategorias %}
+       {% for category in postCategories %}
+          <li><a href="/blog/?categoria={{ category | url_encode }}" class="cat-link" data-category="{{ category }}">{{ category }}</a></li>
+        {% endfor %}
+       {% assign postTags = item.data.tags | normalizarTags %}
+       {% for tag in postTags %}
+          <li><a href="/blog/?tag={{ tag | url_encode }}" class="tag-link" data-tag="{{ tag }}">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    </aside>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+<div id="blog-empty-state" style="display: none; padding: 2rem 0;">
+  <p>Nenhum post encontrado nesta categoria.</p>
+  <p><a href="/blog/" class="btn-opposite limpar-filtro">Ver todos os posts</a></p>
+</div>
+<nav id="blog-paginacao" aria-label="Paginação do blog" style="display: none;">
+  <button id="pag-anterior" aria-label="Página anterior">&#8592;</button>
+  <span id="pag-info"></span>
+  <button id="pag-proxima" aria-label="Próxima página">&#8594;</button>
+</nav>

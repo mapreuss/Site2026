@@ -1,0 +1,10 @@
+
+    {% if page.url != '/blog/' and page.url != '/blog' %}
+    <article>
+      <p class="chapeu"><small>Vida real</small></p>
+      <h2>Blog</h2>
+      <p>Dia a dia, hobbies, reflexões e nada com nada.</p>
+    </article>
+    {% endif %}
+    
+    {% include 'partials/blog-itens.njk' %}

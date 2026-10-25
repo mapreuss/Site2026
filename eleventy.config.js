@@ -7,6 +7,20 @@ export default function (eleventyConfig) {
     return arr.slice(0, limit);
   });
 
+  eleventyConfig.addFilter("formatarDataBR", function(dataInput) {
+    if (!dataInput) return "";
+    if (typeof dataInput === "string" && /^\d{4}-\d{2}-\d{2}/.test(dataInput)) {
+      const partes = dataInput.substring(0, 10).split("-");
+      return `${partes[2]}/${partes[1]}/${partes[0]}`;
+    }
+    const data = dataInput instanceof Date ? dataInput : new Date(dataInput);
+    if (isNaN(data.getTime())) return String(dataInput);
+    const dia = String(data.getDate()).padStart(2, "0");
+    const mes = String(data.getMonth() + 1).padStart(2, "0");
+    const ano = data.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+  });
+
   eleventyConfig.addFilter("sortBy", (arr, property) => {
     if (!Array.isArray(arr) || !property) return arr;
     const keys = property.split(".");
@@ -19,15 +33,20 @@ export default function (eleventyConfig) {
 
   // Adiciona o filtro customizado
   eleventyConfig.addFilter("tagsComContagem", function(colecao) {
+    if (!colecao || !Array.isArray(colecao)) return [];
     let contagemTags = {};
 
     colecao.forEach(item => {
       // Pega as tags do post, se não houver, usa um array vazio
-      let tags = item.data.tags || [];
+      let tags = item.data?.tags || [];
+      if (typeof tags === "string") {
+        tags = [tags];
+      }
+      if (!Array.isArray(tags)) tags = [];
 
       tags.forEach(tag => {
-        // Ignora a tag "portfolio" se ela for a tag que cria a coleção
-        if (tag !== "portfolio" && tag !== "post") {
+        // Ignora tags de sistema/coleção
+        if (tag && tag !== "portfolio" && tag !== "post" && tag !== "blog") {
           if (!contagemTags[tag]) {
             contagemTags[tag] = 0;
           }
@@ -49,10 +68,163 @@ export default function (eleventyConfig) {
     return listaTags.sort((a, b) => a.nome.localeCompare(b.nome));
   });
 
+  eleventyConfig.addFilter("normalizarTags", function(tags) {
+    if (!tags) return [];
+    if (typeof tags === "string") tags = [tags];
+    if (Array.isArray(tags)) {
+      return tags.filter(t => Boolean(t) && t !== "portfolio" && t !== "post" && t !== "blog");
+    }
+    return [];
+  });
+
+  eleventyConfig.addFilter("tagListaParaData", function(tags) {
+    if (!tags) return "";
+    let lista = [];
+    if (typeof tags === "string") {
+      lista = [tags];
+    } else if (Array.isArray(tags)) {
+      lista = tags;
+    }
+    return lista
+      .filter(t => Boolean(t) && t !== "portfolio" && t !== "post" && t !== "blog")
+      .map(t => String(t).trim().toLowerCase())
+      .join("|");
+  });
+
+  eleventyConfig.addFilter("categoriasComContagem", function(colecao) {
+    if (!colecao || !Array.isArray(colecao)) return [];
+    let contagemCategoria = {};
+
+    colecao.forEach(item => {
+      // Pega as categorias do post, se não houver, usa um array vazio
+      let categories = item.data?.categories || [];
+      if (typeof categories === "string") {
+        categories = [categories];
+      }
+
+      categories.forEach(categoria => {
+        // Ignora a categoria se ela for nula ou as tags do sistema
+        if (categoria && categoria !== "portfolio" && categoria !== "post") {
+          if (!contagemCategoria[categoria]) {
+            contagemCategoria[categoria] = 0;
+          }
+          contagemCategoria[categoria]++;
+        }
+      });
+    });
+
+    // Converte o objeto em um array para facilitar o uso no template (HTML)
+    let listaCategorias = [];
+    for (let categoria in contagemCategoria) {
+      listaCategorias.push({ 
+        nome: categoria, 
+        quantidade: contagemCategoria[categoria] 
+      });
+    }
+
+    // Ordena as categorias em ordem alfabética
+    return listaCategorias.sort((a, b) => a.nome.localeCompare(b.nome));
+  });
+
+  eleventyConfig.addFilter("normalizarCategorias", function(categories) {
+    if (!categories) return [];
+    if (typeof categories === "string") return [categories];
+    if (Array.isArray(categories)) return categories.filter(Boolean);
+    return [];
+  });
+
+  eleventyConfig.addFilter("categoriaListaParaData", function(categories) {
+    if (!categories) return "";
+    let lista = [];
+    if (typeof categories === "string") {
+      lista = [categories];
+    } else if (Array.isArray(categories)) {
+      lista = categories;
+    }
+    return lista
+      .filter(Boolean)
+      .map(c => String(c).trim().toLowerCase())
+      .join("|");
+  });
+
   eleventyConfig.addFilter("filtrarTagsItem", function(tags) {
   if (!tags) return [];
     // Remove a tag "portfolio" e pega apenas as 3 primeiras restantes
     return tags.filter(tag => tag !== "portfolio").slice(0, 3);
+  });
+
+  // === ARQUIVO: agrupa posts por ano e mês ===
+  eleventyConfig.addFilter("arquivoPorAnoMes", function(colecao) {
+    if (!colecao || !Array.isArray(colecao)) return [];
+
+    const meses = [
+      "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+      "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+
+    const grupos = {};
+
+    colecao.forEach(item => {
+      const rawDate = item.data?.date;
+      if (!rawDate) return;
+      const d = rawDate instanceof Date ? rawDate : new Date(rawDate);
+      if (isNaN(d.getTime())) return;
+
+      const ano = d.getFullYear();
+      const mesIdx = d.getMonth(); // 0-11
+      const chave = `${ano}-${String(mesIdx + 1).padStart(2, "0")}`;
+
+      if (!grupos[chave]) {
+        grupos[chave] = {
+          chave,
+          ano,
+          mes: meses[mesIdx],
+          mesNum: mesIdx + 1,
+          quantidade: 0
+        };
+      }
+      grupos[chave].quantidade++;
+    });
+
+    // Ordena do mais recente para o mais antigo
+    return Object.values(grupos).sort((a, b) => b.chave.localeCompare(a.chave));
+  });
+
+  // Formata data como "YYYY-MM" para uso no data-attribute dos cards
+  eleventyConfig.addFilter("anoMesParaData", function(dateInput) {
+    if (!dateInput) return "";
+    const d = dateInput instanceof Date ? dateInput : new Date(dateInput);
+    if (isNaN(d.getTime())) return "";
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+  });
+
+  // === FILTROS PARA RSS ===
+
+  // Formata data no padrão RFC 822 para o feed RSS
+  eleventyConfig.addFilter("rssDate", function(dateInput) {
+    if (!dateInput) return "";
+    const date = dateInput instanceof Date ? dateInput : new Date(dateInput);
+    if (isNaN(date.getTime())) return "";
+    return date.toUTCString();
+  });
+
+  // Retorna a data do post mais recente para o lastBuildDate
+  eleventyConfig.addFilter("rssLastDate", function(item) {
+    if (!item || !item.data || !item.data.date) return new Date().toUTCString();
+    const date = item.data.date instanceof Date ? item.data.date : new Date(item.data.date);
+    if (isNaN(date.getTime())) return new Date().toUTCString();
+    return date.toUTCString();
+  });
+
+  // Escapa caracteres especiais de XML
+  eleventyConfig.addFilter("xmlEscape", function(str) {
+    if (!str) return "";
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&apos;");
   });
 
   return {
