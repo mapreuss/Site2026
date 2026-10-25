@@ -1,0 +1,26 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Marta Preuss — Blog</title>
+    <link>https://martinha.online</link>
+    <description>Dia a dia, hobbies, reflexões e nada com nada.</description>
+    <language>pt-br</language>
+    <atom:link href="https://martinha.online/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>{{ collections.blog | reverse | first | rssLastDate }}</lastBuildDate>
+    {% for item in collections.blog | reverse %}
+    <item>
+      <title>{{ item.data.title | xmlEscape }}</title>
+      <link>https://martinha.online{{ item.url }}</link>
+      <guid isPermaLink="true">https://martinha.online{{ item.url }}</guid>
+      <pubDate>{{ item.data.date | rssDate }}</pubDate>
+      {% if item.data.excerpt %}<description>{{ item.data.excerpt | xmlEscape }}</description>{% endif %}
+      <content:encoded><![CDATA[{{ item.content | safe }}]]></content:encoded>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
+

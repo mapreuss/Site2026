@@ -118,6 +118,32 @@ section.col-2 article{
 .widget a.active {
   font-weight: 600;
 }
+
+/* === RSS Widget === */
+.widget-rss-desc {
+  font-size: 0.875rem;
+  color: var(--cor-texto-secundario);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+.btn-rss {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--cor-destaque-principal);
+  color: #fff !important;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease;
+}
+.btn-rss:hover {
+  background-color: var(--cor-destaque-secundario);
+  text-decoration: none !important;
+  color: #fff !important;
+}
 .limpar-filtro {
   color: var(--cor-destaque-secundario);
   text-decoration: underline;

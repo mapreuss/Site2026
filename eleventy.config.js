@@ -153,6 +153,35 @@ export default function (eleventyConfig) {
     return tags.filter(tag => tag !== "portfolio").slice(0, 3);
   });
 
+  // === FILTROS PARA RSS ===
+
+  // Formata data no padrão RFC 822 para o feed RSS
+  eleventyConfig.addFilter("rssDate", function(dateInput) {
+    if (!dateInput) return "";
+    const date = dateInput instanceof Date ? dateInput : new Date(dateInput);
+    if (isNaN(date.getTime())) return "";
+    return date.toUTCString();
+  });
+
+  // Retorna a data do post mais recente para o lastBuildDate
+  eleventyConfig.addFilter("rssLastDate", function(item) {
+    if (!item || !item.data || !item.data.date) return new Date().toUTCString();
+    const date = item.data.date instanceof Date ? item.data.date : new Date(item.data.date);
+    if (isNaN(date.getTime())) return new Date().toUTCString();
+    return date.toUTCString();
+  });
+
+  // Escapa caracteres especiais de XML
+  eleventyConfig.addFilter("xmlEscape", function(str) {
+    if (!str) return "";
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&apos;");
+  });
+
   return {
     dir: {
       input: "src",
