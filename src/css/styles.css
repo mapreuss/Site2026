@@ -930,6 +930,46 @@ footer p {
   margin-bottom: 2em;
 }
 
+/* ---- PAGINAÇÃO DO BLOG ---- */
+#blog-paginacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+#blog-paginacao button {
+  background: none;
+  border: 1px solid var(--cor-destaque-principal);
+  color: var(--cor-destaque-principal);
+  border-radius: 0.125rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+}
+
+#blog-paginacao button:hover:not(:disabled) {
+  background: var(--cor-destaque-principal);
+  color: #fff;
+}
+
+#blog-paginacao button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+#pag-info {
+  font-size: 0.875rem;
+  color: var(--cor-texto-secundario);
+  font-family: var(--fonte-texto);
+  min-width: 4rem;
+  text-align: center;
+}
+
 figure{
   margin: 0;
   padding: 0;

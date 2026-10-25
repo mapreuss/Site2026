@@ -4,9 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const chapeuEl = document.getElementById("blog-chapeu");
   const descEl = document.getElementById("blog-description");
   const emptyState = document.getElementById("blog-empty-state");
+  const paginacao = document.getElementById("blog-paginacao");
+  const btnAnterior = document.getElementById("pag-anterior");
+  const btnProxima = document.getElementById("pag-proxima");
+  const pagInfo = document.getElementById("pag-info");
 
   // Se não estiver na página com listagem de cards, não executa o filtro na página atual
   if (!cardsContainer) return;
+
+  const POSTS_POR_PAGINA = 10;
+  let paginaAtual = 1;
+  let cardsVisiveis = []; // lista de cards que passam pelo filtro ativo
 
   const defaultTitle = titleEl ? titleEl.textContent : "Blog";
   const defaultChapeu = chapeuEl ? chapeuEl.textContent : "Blog";
@@ -22,39 +30,63 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/[\u0300-\u036f]/g, "");
   }
 
+  // Renderiza a página atual dentro dos cardsVisiveis
+  function renderizarPagina() {
+    const inicio = (paginaAtual - 1) * POSTS_POR_PAGINA;
+    const fim = inicio + POSTS_POR_PAGINA;
+
+    // Todos os cards DOM
+    const todosCards = Array.from(document.querySelectorAll(".blog-card"));
+
+    // Esconde tudo primeiro
+    todosCards.forEach((card) => (card.style.display = "none"));
+
+    // Mostra só os da página atual dentro dos visíveis pelo filtro
+    cardsVisiveis.slice(inicio, fim).forEach((card) => (card.style.display = ""));
+
+    // Atualiza controles de paginação
+    const totalPaginas = Math.ceil(cardsVisiveis.length / POSTS_POR_PAGINA);
+
+    if (paginacao) {
+      if (totalPaginas <= 1) {
+        paginacao.style.display = "none";
+      } else {
+        paginacao.style.display = "flex";
+        if (pagInfo) pagInfo.textContent = `${paginaAtual} / ${totalPaginas}`;
+        if (btnAnterior) btnAnterior.disabled = paginaAtual === 1;
+        if (btnProxima) btnProxima.disabled = paginaAtual === totalPaginas;
+      }
+    }
+  }
+
   function aplicarFiltro(tipo, valor, atualizaHistorico = false) {
-    const cards = document.querySelectorAll(".blog-card");
+    const cards = Array.from(document.querySelectorAll(".blog-card"));
     const categoryLinks = document.querySelectorAll(".cat-link");
     const tagLinks = document.querySelectorAll(".tag-link");
 
     const isValido = (tipo === "categoria" || tipo === "tag") && valor && valor.trim() !== "";
+
+    paginaAtual = 1; // sempre volta à primeira página ao filtrar
 
     if (isValido) {
       const valorTrim = valor.trim();
       const normAlvo = normalizar(valorTrim);
       const isCategoria = tipo === "categoria";
       const isTag = tipo === "tag";
-      let visiveis = 0;
 
-      cards.forEach((card) => {
-        let match = false;
+      // Filtra quais cards passam
+      cardsVisiveis = cards.filter((card) => {
         if (isCategoria) {
           const rawCats = card.getAttribute("data-categories") || "";
-          const cardCategorias = rawCats.split("|").map(normalizar);
-          match = cardCategorias.includes(normAlvo);
+          return rawCats.split("|").map(normalizar).includes(normAlvo);
         } else if (isTag) {
           const rawTags = card.getAttribute("data-tags") || "";
-          const cardTags = rawTags.split("|").map(normalizar);
-          match = cardTags.includes(normAlvo);
+          return rawTags.split("|").map(normalizar).includes(normAlvo);
         }
-
-        if (match) {
-          card.style.display = "";
-          visiveis++;
-        } else {
-          card.style.display = "none";
-        }
+        return false;
       });
+
+      renderizarPagina();
 
       if (emptyState) {
         const emptyMsg = emptyState.querySelector("p");
@@ -63,22 +95,18 @@ document.addEventListener("DOMContentLoaded", () => {
             ? `Nenhum post encontrado com a tag "${valorTrim}".`
             : `Nenhum post encontrado nesta categoria.`;
         }
-        emptyState.style.display = visiveis === 0 ? "block" : "none";
+        emptyState.style.display = cardsVisiveis.length === 0 ? "block" : "none";
       }
 
-      // Atualiza o título e cabeçalho com o nome da categoria ou tag
-      if (titleEl) {
-        titleEl.textContent = valorTrim;
-      }
+      // Atualiza o título e cabeçalho
+      if (titleEl) titleEl.textContent = valorTrim;
       const extraTitles = document.querySelectorAll("#trabalhos > article h2");
       extraTitles.forEach((el) => (el.textContent = valorTrim));
 
-      if (chapeuEl) {
-        chapeuEl.textContent = isTag ? "Tag" : "Categoria";
-      }
+      if (chapeuEl) chapeuEl.textContent = isTag ? "Tag" : "Categoria";
       if (descEl) {
         const rotulo = isTag ? `com a tag ${valorTrim}` : `em ${valorTrim}`;
-        descEl.innerHTML = `Mostrando ${visiveis} ${visiveis === 1 ? "post" : "posts"} ${rotulo}. <a href="/blog/" class="limpar-filtro">Ver todos os posts</a>`;
+        descEl.innerHTML = `Mostrando ${cardsVisiveis.length} ${cardsVisiveis.length === 1 ? "post" : "posts"} ${rotulo}. <a href="/blog/" class="limpar-filtro">Ver todos os posts</a>`;
       }
       document.title = `${valorTrim} | Blog`;
 
@@ -120,12 +148,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } else {
       // Limpar filtro / exibir todos os posts
-      cards.forEach((card) => (card.style.display = ""));
+      cardsVisiveis = cards;
+
+      renderizarPagina();
+
       if (emptyState) {
         const emptyMsg = emptyState.querySelector("p");
-        if (emptyMsg) {
-          emptyMsg.textContent = "Nenhum post encontrado nesta categoria.";
-        }
+        if (emptyMsg) emptyMsg.textContent = "Nenhum post encontrado nesta categoria.";
         emptyState.style.display = "none";
       }
 
@@ -153,6 +182,28 @@ document.addEventListener("DOMContentLoaded", () => {
         window.history.pushState({}, "", url.pathname);
       }
     }
+  }
+
+  // Botões de paginação
+  if (btnAnterior) {
+    btnAnterior.addEventListener("click", () => {
+      if (paginaAtual > 1) {
+        paginaAtual--;
+        renderizarPagina();
+        cardsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  }
+
+  if (btnProxima) {
+    btnProxima.addEventListener("click", () => {
+      const totalPaginas = Math.ceil(cardsVisiveis.length / POSTS_POR_PAGINA);
+      if (paginaAtual < totalPaginas) {
+        paginaAtual++;
+        renderizarPagina();
+        cardsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
   }
 
   // Interceptar cliques em links de categoria e tag quando já estiver na página /blog
@@ -201,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Filtro inicial baseado na URL atual
+  // Inicialização: aplica filtro da URL e ativa paginação
   const params = new URLSearchParams(window.location.search);
   const catInicial = params.get("categoria");
   const tagInicial = params.get("tag");
@@ -209,5 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
     aplicarFiltro("categoria", catInicial, false);
   } else if (tagInicial) {
     aplicarFiltro("tag", tagInicial, false);
+  } else {
+    aplicarFiltro(null, null, false);
   }
 });
